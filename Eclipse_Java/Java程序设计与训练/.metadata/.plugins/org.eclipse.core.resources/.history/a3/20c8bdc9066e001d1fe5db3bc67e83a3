@@ -1,0 +1,28 @@
+import java.io.*;
+public class concat {
+	public static void main(String[] args) throws FileNotFoundException,IOException{
+		//definitions
+		FileInputStream fis;
+		FileOutputStream fos;
+		InputStreamReader isr;
+		OutputStreamWriter osw;
+		BufferedReader br;
+		BufferedWriter bw;
+		
+		fis=new FileInputStream(args[1]);
+		fos=new FileOutputStream(args[0]);
+		
+		isr=new InputStreamReader(fis);
+		osw=new OutputStreamWriter(fos);
+		
+		br=new BufferedReader(isr);
+		bw=new BufferedWriter(osw);
+		
+		while(br.read()!=-1){
+			br.read();
+		}
+		
+
+	}
+
+}

@@ -1,0 +1,31 @@
+import java.io.*;
+public class FileList {
+	public static void main(String[] args) {
+        list(".",0);
+	}
+	public static void list(String path,int space){
+		File dir=new File(path);
+		String files[]=dir.list();
+		for(int i=0;i<files.length;i++){
+			//print spaces
+			for(int j=0;j<space;j++)
+				System.out.print(" ");
+			//print files
+			File f=new File(files[i]);
+			if(f.isFile()){
+				System.out.println(f);
+			}
+			else if(f.isDirectory()){
+				System.out.println("<"+f+">");
+				String newPath;
+				if(path==".")//开始时用的是当前目录"."，但后来使用其子目录时这个点必须删掉
+	                         //例如现为当前目录，路径为"."。当前目录下的目录"1"的路径就为"1"，没有点了			
+				    newPath=new String(f.toString());
+				else 
+					newPath=new String(path+"/"+f);
+				list(newPath,space+4);
+			}
+		}
+	}
+
+}

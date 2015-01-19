@@ -1,0 +1,6 @@
+#Sun Dec 21 11:51:57 CST 2008
+ColorsAndFontsPreferencePage.expandedCategories=Torg.eclipse.ui.workbenchMisc\tTorg.eclipse.debug.ui.presentation\tTorg.eclipse.jdt.ui.presentation\tTorg.eclipse.compare.contentmergeviewer.TextMergeViewer\tTorg.eclipse.ui.presentation.default
+org.eclipse.jface.textfont=1|Courier New|12.75|0|WINDOWS|1|-17|0|0|0|400|0|0|0|0|3|2|1|49|Courier New;
+eclipse.preferences.version=1
+org.eclipse.debug.ui.consoleFont=1|\u5FAE\u8F6F\u96C5\u9ED1|11.25|0|WINDOWS|1|-15|0|0|0|400|0|0|0|-122|3|2|1|34|\u5FAE\u8F6F\u96C5\u9ED1;
+ColorsAndFontsPreferencePage.selectedElement=Forg.eclipse.debug.ui.consoleFont

@@ -1,0 +1,1 @@
+java -cp .;./quaqua.jar console.Console

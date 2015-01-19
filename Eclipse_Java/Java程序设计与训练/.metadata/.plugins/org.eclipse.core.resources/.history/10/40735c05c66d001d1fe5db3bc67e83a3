@@ -1,0 +1,35 @@
+import java.io.*;
+public class FileStore {
+	public static void main (String[] args) throws IOException{
+		InputStreamReader isr;
+		BufferedReader br;
+		OutputStreamWriter osw;
+		BufferedWriter bw;
+		FileOutputStream fos;
+		
+		isr=new InputStreamReader(System.in);
+		br=new BufferedReader(isr);
+		StringBuffer sb=new StringBuffer();
+		String s=br.readLine();
+		while(s.equals("quit")==false && s.equals("QUIT")==false){
+			sb.append(s);
+			sb.append('\n');
+			s=br.readLine();	
+		}
+		System.out.println("Please input a filename:");
+		s=br.readLine();
+		
+		
+		fos=new FileOutputStream("s");
+		osw=new OutputStreamWriter(fos);
+		bw=new BufferedWriter(osw);
+		bw.write(sb.toString());
+		bw.flush();
+
+		
+		
+		
+
+	}
+
+}

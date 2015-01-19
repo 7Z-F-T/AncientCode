@@ -1,0 +1,7 @@
+*** Error at (7,4): incompatible operands: double = int
+*** Error at (8,3): 'd' is not a method in class 'class : Main'
+*** Error at (10,9): incompatible operands: int = string
+*** Error at (11,4): incompatible operands: double = class : Main->string
+*** Error at (22,3): incompatible return: int given, class : Main expected
+*** Error at (22,15): cannot access field 'math' from 'class : Main'
+*** Error at (22,15): function 'math' expects 1 argument(s) but 0 given

@@ -1,0 +1,1 @@
+RcBak.exe /l 0x409 /foRelease/ZoomPerspective.res /d NDEBUG /d _AFXDLL C:\TEMP\ZoomPerspective\ZoomPerspective.rc 

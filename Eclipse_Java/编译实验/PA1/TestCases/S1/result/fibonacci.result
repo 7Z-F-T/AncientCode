@@ -1,0 +1,57 @@
+program
+    class Main <empty>
+        static func main voidtype
+            formals
+            stmtblock
+                vardecl i inttype
+                vardecl F classtype Fibonacci
+                assign
+                    varref F
+                    newobj Fibonacci
+                assign
+                    varref i
+                    intconst 0
+                while
+                    stmtblock
+                        print
+                            call get
+                                varref F
+                                varref i
+                            stringconst "\n"
+                        assign
+                            varref i
+                            add
+                                varref i
+                                intconst 1
+                assign
+                    varref i
+                    readint
+                print
+                    call get
+                        varref F
+                        varref i
+                    stringconst "\n"
+    class Fibonacci <empty>
+        func get inttype
+            formals
+                vardecl index inttype
+            stmtblock
+                if
+                    les
+                        varref index
+                        intconst 2
+                    stmtblock
+                        return
+                            intconst 1
+                return
+                    add
+                        call get
+                            <empty>
+                            sub
+                                varref index
+                                intconst 1
+                        call get
+                            <empty>
+                            sub
+                                varref index
+                                intconst 2

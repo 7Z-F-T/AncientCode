@@ -1,0 +1,9 @@
+第5题用测试文件：
+music.wav	8kHz 	8bit	mono
+去奇点后产生delete_odd.wav
+每两点间加一个零后产生add_zero.wav
+
+第9题用测试文件：
+440+660.wav	8kHz	16bit	mono
+60+180.wav	8kHz	16bit	mono
+900+1260.wav	8kHz	16bit	mono

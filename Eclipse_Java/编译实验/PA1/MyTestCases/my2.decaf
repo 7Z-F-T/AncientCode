@@ -1,0 +1,17 @@
+class Main{
+	static void main(){
+		
+	}
+	void foo1(){
+	
+	}
+	int foo2(){
+	
+	}
+	double foo3(){
+	
+	}
+	bool foo4(int a, double b, bool c, string d){
+	
+	}
+}

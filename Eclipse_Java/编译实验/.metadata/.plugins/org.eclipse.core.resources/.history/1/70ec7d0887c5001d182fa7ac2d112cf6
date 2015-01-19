@@ -1,0 +1,40 @@
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+public class Main extends JFrame{
+	public static void main(String[] args) {
+		Main window=new Main();
+		window.go();
+	}
+	void go(){
+		setLayout(new GridLayout(2,1));
+		JPanel panel1=new JPanel();
+		JPanel panel2=new JPanel();
+		JLabel label1=new JLabel("ÉãÊÏ");
+		JLabel label2=new JLabel("»ªÊÏ");
+		final JTextArea text1=new JTextArea(1,10);
+		final JTextField text2=new JTextField(10);
+		panel1.add(label1);
+		panel2.add(label2);
+		panel1.add(text1);
+		panel2.add(text2);
+		add(panel1);
+		add(panel2);
+		setSize(200,105);
+		setVisible(true);
+		setTitle("ÎÂ¶È×ª»»Æ÷");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		text1.addKeyListener(new KeyAdapter(){
+			public void keyPressed(TextEvent e){
+				text2.setText(Integer.parseInt(text1.getText())*9/5+32+"");
+			}
+		});
+		text2.addKeyListener(new KeyAdapter(){
+			public void keyPressed(TextEvent e){
+				text1.setText(Integer.parseInt(text1.getText())*9/5+32+"");
+			}
+		});
+	}
+
+}

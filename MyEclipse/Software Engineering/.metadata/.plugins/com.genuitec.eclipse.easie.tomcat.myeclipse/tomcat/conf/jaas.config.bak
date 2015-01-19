@@ -1,0 +1,4 @@
+Mini-Pie {
+   org.net9.minipie.server.auth.MiniPieLoginModule required debug=true;
+};
+ss

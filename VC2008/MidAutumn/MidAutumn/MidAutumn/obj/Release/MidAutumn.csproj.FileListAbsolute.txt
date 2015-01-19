@@ -1,0 +1,8 @@
+E:\编程\VC2008\MidAutumn\MidAutumn\MidAutumn\bin\Release\MidAutumn.exe
+E:\编程\VC2008\MidAutumn\MidAutumn\MidAutumn\bin\Release\MidAutumn.pdb
+E:\编程\VC2008\MidAutumn\MidAutumn\MidAutumn\obj\Release\ResolveAssemblyReference.cache
+E:\编程\VC2008\MidAutumn\MidAutumn\MidAutumn\obj\Release\MidAutumn.Form1.resources
+E:\编程\VC2008\MidAutumn\MidAutumn\MidAutumn\obj\Release\MidAutumn.Properties.Resources.resources
+E:\编程\VC2008\MidAutumn\MidAutumn\MidAutumn\obj\Release\MidAutumn.csproj.GenerateResource.Cache
+E:\编程\VC2008\MidAutumn\MidAutumn\MidAutumn\obj\Release\MidAutumn.exe
+E:\编程\VC2008\MidAutumn\MidAutumn\MidAutumn\obj\Release\MidAutumn.pdb

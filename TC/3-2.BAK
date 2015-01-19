@@ -1,0 +1,9 @@
+#include "stdio.h"
+void main()
+{
+int a,b,i;
+scanf("a=%d",&a);
+scanf("b=%d",&b);
+for(i=0;i<=a;i++)
+   
+

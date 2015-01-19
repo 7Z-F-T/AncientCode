@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/190/server/trunk/src
+END
+minipie.properties
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/52/server/trunk/src/minipie.properties
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/10/server/trunk/src/log4j.properties
+END
+hibernate.cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/45/server/trunk/src/hibernate.cfg.xml
+END

@@ -1,0 +1,8 @@
+*** Error at (8,3): can not use this in static function
+*** Error at (9,8): can not reference a non-static field a from static method main
+*** Error at (10,3): can not reference a non-static field foo from static method main
+*** Error at (21,9): incompatible argument 1: double given, int/bool/string expected
+*** Error at (22,12): incompatible argument 2: int[] given, int/bool/string expected
+*** Error at (23,21): incompatible argument 3: class : Main given, int/bool/string expected
+*** Error at (31,5): incompatible operands: string = int
+*** Error at (32,5): incompatible operands: int = string

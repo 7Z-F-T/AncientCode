@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="279" key="DIALOG_WIDTH"/>
+		<item value="319" key="DIALOG_Y_ORIGIN"/>
+		<item value="397" key="DIALOG_HEIGHT"/>
+		<item value="764" key="DIALOG_X_ORIGIN"/>
+		<item value="1|微软雅黑|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|微软雅黑" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="wrap"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="style" key="selection"/>
+		<list key="findhistory">
+			<item value="style"/>
+			<item value="c1"/>
+			<item value="demo"/>
+			<item value="system"/>
+			<item value="radio"/>
+			<item value="currentSelectedShapePro"/>
+			<item value="currenentSelectedShapePro"/>
+			<item value="create"/>
+		</list>
+		<list key="replacehistory">
+			<item value="Check"/>
+			<item value="DrawHandler.currentSelectedShapePro"/>
+			<item value="images"/>
+			<item value="Flip"/>
+			<item value="receive"/>
+			<item value="&quot;"/>
+			<item value="Height"/>
+			<item value="80"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item value="267" key="DIALOG_Y_ORIGIN"/>
+		<item value="409" key="DIALOG_X_ORIGIN"/>
+	</section>
+</section>

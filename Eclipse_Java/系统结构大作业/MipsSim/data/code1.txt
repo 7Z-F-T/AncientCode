@@ -1,0 +1,6 @@
+addui r10,r10,10
+addui r1,r1,100
+addui r2,r2,200
+addui r3,r3,300
+addui r4,r4,214
+HALT 0

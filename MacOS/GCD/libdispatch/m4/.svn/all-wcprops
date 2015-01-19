@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/repository/libdispatch/!svn/ver/127/trunk/m4
+END
+atomic.m4
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repository/libdispatch/!svn/ver/58/trunk/m4/atomic.m4
+END
+blocks.m4
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repository/libdispatch/!svn/ver/127/trunk/m4/blocks.m4
+END
+private-extern.m4
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repository/libdispatch/!svn/ver/83/trunk/m4/private-extern.m4
+END

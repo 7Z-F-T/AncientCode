@@ -1,0 +1,2 @@
+*** Error at (3,17): incompatible return: Error given, void expected
+*** Error at (3,24): incompatible operand: - bool

@@ -1,0 +1,1 @@
+将本目录放在TestCases目录下，双击runAndCheck.bat

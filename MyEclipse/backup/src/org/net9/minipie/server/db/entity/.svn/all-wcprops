@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/185/server/trunk/src/org/net9/minipie/server/db/entity
+END
+User2User.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/185/server/trunk/src/org/net9/minipie/server/db/entity/User2User.java
+END
+UserURL.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/185/server/trunk/src/org/net9/minipie/server/db/entity/UserURL.java
+END
+ContactAddress.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/153/server/trunk/src/org/net9/minipie/server/db/entity/ContactAddress.java
+END
+ContactEmail.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/153/server/trunk/src/org/net9/minipie/server/db/entity/ContactEmail.java
+END
+UserIM.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/185/server/trunk/src/org/net9/minipie/server/db/entity/UserIM.java
+END
+UserPhoneNo.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/185/server/trunk/src/org/net9/minipie/server/db/entity/UserPhoneNo.java
+END
+Tag2Contact.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/24/server/trunk/src/org/net9/minipie/server/db/entity/Tag2Contact.java
+END
+Tag.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/153/server/trunk/src/org/net9/minipie/server/db/entity/Tag.java
+END
+Group2User.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/141/server/trunk/src/org/net9/minipie/server/db/entity/Group2User.java
+END
+ContactURL.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/153/server/trunk/src/org/net9/minipie/server/db/entity/ContactURL.java
+END
+User.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/185/server/trunk/src/org/net9/minipie/server/db/entity/User.java
+END
+ContactIM.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/153/server/trunk/src/org/net9/minipie/server/db/entity/ContactIM.java
+END
+ContactPhoneNo.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/153/server/trunk/src/org/net9/minipie/server/db/entity/ContactPhoneNo.java
+END
+UserAddress.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/185/server/trunk/src/org/net9/minipie/server/db/entity/UserAddress.java
+END
+UserEmail.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/185/server/trunk/src/org/net9/minipie/server/db/entity/UserEmail.java
+END
+Notification.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/60/server/trunk/src/org/net9/minipie/server/db/entity/Notification.java
+END
+Contact.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/185/server/trunk/src/org/net9/minipie/server/db/entity/Contact.java
+END
+Group.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/153/server/trunk/src/org/net9/minipie/server/db/entity/Group.java
+END
+Tag2User.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/24/server/trunk/src/org/net9/minipie/server/db/entity/Tag2User.java
+END

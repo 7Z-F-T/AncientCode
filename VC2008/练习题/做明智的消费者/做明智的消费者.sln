@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "做明智的消费者", "做明智的消费者\做明智的消费者.vcproj", "{6141CCB2-9D0D-43E0-BA79-299A5EF43B90}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6141CCB2-9D0D-43E0-BA79-299A5EF43B90}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6141CCB2-9D0D-43E0-BA79-299A5EF43B90}.Debug|Win32.Build.0 = Debug|Win32
+		{6141CCB2-9D0D-43E0-BA79-299A5EF43B90}.Release|Win32.ActiveCfg = Release|Win32
+		{6141CCB2-9D0D-43E0-BA79-299A5EF43B90}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

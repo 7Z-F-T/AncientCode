@@ -1,0 +1,17 @@
+class Main{
+	int i;
+	static void main(){
+		class ABC abc;
+		abc=new ABC();
+		abc.fabc();
+	}
+}
+	
+class ABC{
+	int a;
+	void fabc(){
+		this.a=5;
+		Print(a);
+		Print("hehe");
+	}
+}

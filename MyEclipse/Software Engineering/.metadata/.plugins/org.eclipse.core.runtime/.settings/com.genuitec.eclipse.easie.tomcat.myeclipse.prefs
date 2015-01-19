@@ -1,0 +1,8 @@
+#Sat Jun 20 23:33:49 CST 2009
+OPT_VM_ARGS=-Djava.security.auth.login.config\="E\:/for_en/for_minipie/minipie-jaas.config"
+LIBRARY_PATH="D\:\\Program Files\\MyEclipse\\bin;D\:\\Program Files\\MyEclipse\\myeclipse\\eclipse\\plugins\\com.genuitec.eclipse.easie.tomcat.myeclipse_6.5.0.zmyeclipse650200806\\tomcat\\bin"
+tomcat.configuration.version.current=2
+eclipse.preferences.version=1
+JDK_HOME=D\:\\Program Files\\MyEclipse
+ENDORSED_DIRS="D\:\\Program Files\\MyEclipse\\myeclipse\\eclipse\\plugins\\com.genuitec.eclipse.easie.tomcat.myeclipse_6.5.0.zmyeclipse650200806\\tomcat/common/endorsed"
+JDK_INSTALLATION_NAME=MyEclipse

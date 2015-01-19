@@ -1,0 +1,20 @@
+class Main{
+	void foo(){
+		return a+5;
+		return;
+		break;
+		
+		if(true)
+			if(false)
+				a=1;
+			else
+				a=2;
+				
+		while(a==b)	
+			a=1;
+		for(;true;){
+			b=1;
+		}
+		Print(a, b, a+1);
+	}
+}

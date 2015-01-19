@@ -1,0 +1,53 @@
+class Main{
+	int m;
+	int m2;
+	int m3;
+	int m4;
+	static void main(){
+		class ABC abc;
+		abc=new ABC();
+		class DEF def;
+		def=new DEF();
+		abc.fABC(1,2,3);
+		def.fABC(1,2,3);
+		abc.sABC(4,5,6);
+		def.sABC(4,5,6);
+		ABC.sABC(7,8,9);
+		DEF.sABC(7,8,9);
+	}
+	//static void fun(){
+		//int j;
+		//j=8;
+		//Print(j);
+	//}
+}
+
+class ABC{
+	int a;
+	int b;
+	void fABC(int x,int y,int z){
+		a=5;
+		this.b=6;
+		Print(a);
+		Print(b);
+		Print(x,y,z);
+	}
+	static void sABC(int x,int y,int z){
+		Print(x,y,z);
+	}
+}
+
+class DEF{
+	int a;
+	int b;
+	void fABC(int x,int y,int z){
+		a=5;
+		this.b=6;
+		Print(a);
+		Print(b);
+		Print(z,y,x);
+	}
+	static void sABC(int x,int y,int z){
+		Print(z,y,x);
+	}
+}

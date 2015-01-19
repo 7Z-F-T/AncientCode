@@ -1,0 +1,12 @@
+*** Error at (13,5): incompatible operands: int = class : Main->void
+*** Error at (28,13): cannot access field 'foo1' from 'string'
+*** Error at (29,9): cannot access field 'foo1' from 'class : B'
+*** Error at (30,10): 'a' is not a method in class 'class : B'
+*** Error at (31,10): field 'nothing' not found in 'class : B'
+*** Error at (32,7): 'a' is not a method in class 'class : Main'
+*** Error at (33,7): field 'nothing' not found in 'class : Main'
+*** Error at (34,12): 'a' is not a method in class 'class : Main'
+*** Error at (35,12): field 'nothing' not found in 'class : Main'
+*** Error at (36,5): incompatible operands: int = void
+*** Error at (37,5): incompatible operands: int = void
+*** Error at (38,5): incompatible operands: int = void

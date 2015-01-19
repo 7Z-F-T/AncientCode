@@ -1,0 +1,66 @@
+class Main{
+	static void main(){
+		
+	}
+	int a;
+	int c;
+	void foo(){
+		int b;
+		int c;
+		b = a;
+		b = c;
+		
+		b = foo;
+	}
+	void foo3(){
+		int i;
+		class B ob;
+		i = ob.foo1();
+		ob.foo3(1, 1.0, true, "true", new A(), new int[1]);
+		ob.foo3(1, 1.0, true, "true", new AA(), new int[1]);
+		ob.foo3(1, 1.0, true, "true", null, new int[1]);
+		i = func();
+		i = this.func();
+		B.foo4(1);
+		ob.foo4(1);
+		
+		
+		i = "aaa".foo1();
+		i = B.foo1();
+		i = ob.a();
+		i = ob.nothing();
+		i = a();
+		i = nothing();
+		i = this.a();
+		i = this.nothing();
+		i = ob.foo2();
+		i = foo3();
+		i = this.foo3();
+
+	}
+	int func(){
+		
+	}
+}
+
+class A{
+	int a;
+}
+
+class AA extends A{
+}
+
+class B{
+	int a;
+	int foo1(){
+		
+	}
+	void foo2(){
+		
+	}
+	void foo3(int a, double b, bool c, string d, class A e, int[] f){
+		
+	}
+  static void foo4(int a){
+  }
+}

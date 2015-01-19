@@ -1,0 +1,25 @@
+data segment
+       N dw 10 dup ( 5 dup (20)) 
+data ends
+
+code   segment
+main   proc   far
+       assume cs:code,ds:data
+start:   
+       push ds
+       sub ax,ax
+       push ax
+        
+       mov ax,data
+       mov ds,ax
+       
+       mov cx,size N
+        
+       mov ax,4c00h
+       int 21h
+        
+
+		
+main   endp
+code   ends
+          end   start

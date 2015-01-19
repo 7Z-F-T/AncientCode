@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/186/server/trunk/src/org/net9/minipie/server/api
+END
+PhonebookResources.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/169/server/trunk/src/org/net9/minipie/server/api/PhonebookResources.java
+END
+BaseResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/175/server/trunk/src/org/net9/minipie/server/api/BaseResource.java
+END
+PhonebookContactListResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/169/server/trunk/src/org/net9/minipie/server/api/PhonebookContactListResource.java
+END
+PhonebookTagListResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/169/server/trunk/src/org/net9/minipie/server/api/PhonebookTagListResource.java
+END
+PhonebookUserListResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/169/server/trunk/src/org/net9/minipie/server/api/PhonebookUserListResource.java
+END
+PhonebookContactResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/175/server/trunk/src/org/net9/minipie/server/api/PhonebookContactResource.java
+END
+ProfileResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/178/server/trunk/src/org/net9/minipie/server/api/ProfileResource.java
+END
+PhonebookTagResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/169/server/trunk/src/org/net9/minipie/server/api/PhonebookTagResource.java
+END
+AuthResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/169/server/trunk/src/org/net9/minipie/server/api/AuthResource.java
+END
+ImageResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/175/server/trunk/src/org/net9/minipie/server/api/ImageResource.java
+END
+PhonebookUserResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/186/server/trunk/src/org/net9/minipie/server/api/PhonebookUserResource.java
+END
+BrowseResources.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/181/server/trunk/src/org/net9/minipie/server/api/BrowseResources.java
+END
+NotificationResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/169/server/trunk/src/org/net9/minipie/server/api/NotificationResource.java
+END

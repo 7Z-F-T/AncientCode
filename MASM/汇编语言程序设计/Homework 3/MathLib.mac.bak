@@ -1,0 +1,85 @@
+;Square
+square macro src,dst
+    push ax
+    mov ax,src
+    imul ax
+    mov dst,ax
+    pop ax
+    endm
+
+;Absolute
+absolute macro src,dst
+    local cont
+    push ax
+    mov ax,src
+    add ax,0;get SF
+    jns cont
+    neg ax
+cont:
+    mov dst,ax
+    pop ax
+    endm
+    
+;Square root
+squareroot macro src,dst
+    local exit,wrong,cont,found
+    push ax
+    push bx
+    push cx
+    push dx
+    mov bx,src
+    add bx,0;get SF
+    js wrong
+    mov cx,1;start search from 1
+cont:
+    mov ax,cx
+    mul ax
+    cmp ax,bx
+    ja found
+    inc cx;not found, continue experiment
+    jmp cont
+found:
+    dec cx
+    mov dst,cx
+    jmp exit
+wrong:
+    mov dst,-1;For negative src, return -1
+    jmp exit
+exit:
+    pop dx
+    pop cx
+    pop bx
+    pop ax
+    endm
+    
+;logarithm with base 2
+logarithm macro src,dst
+    local exit,wrong,cont,found
+    push ax
+    push bx
+    push cx
+    push dx
+    mov ax,src
+    add ax,0;get SF
+    js wrong
+    mov cx,1
+    mov bx,2
+cont:
+    div bx
+    cmp ax,1
+    je found
+    inc cx;//not found, continue experiment
+    mov dx,0
+    jmp cont
+found:
+    mov dst,cx
+    jmp exit
+wrong:
+    mov dst,-1
+    jmp exit
+exit:
+    pop dx
+    pop cx
+    pop bx
+    pop ax
+    endm

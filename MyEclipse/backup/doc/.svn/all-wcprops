@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/159/server/trunk/doc
+END
+db_script_new.sql
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/139/server/trunk/doc/db_script_new.sql
+END
+db-script.sql
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/75/server/trunk/doc/db-script.sql
+END
+restclient-ui-2.3-jar-with-dependencies.jar
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/139/server/trunk/doc/restclient-ui-2.3-jar-with-dependencies.jar
+END
+minipie-jaas.config
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/158/server/trunk/doc/minipie-jaas.config
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/159/server/trunk/doc/README.txt
+END

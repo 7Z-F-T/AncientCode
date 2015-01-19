@@ -1,0 +1,13 @@
+function [ lambda1, x1 ] = Eigen
+%Compute the main eigenvalue and its corresponding eigenvector
+
+%Preparations
+v = ones(3,1);
+v_prev = ones(3,1);
+u = ones(3,1);
+u_prev = ones(3,1);
+A=[5,-4,1;-4,6,-4;1,
+%Start calculation
+while(1 == 1)
+    
+

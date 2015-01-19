@@ -1,0 +1,38 @@
+*** Error at (3,3): incompatible return: int given, void expected
+*** Error at (6,3): incompatible return: void given, int expected
+*** Error at (9,3): incompatible return: double given, int expected
+*** Error at (14,9): incompatible operands: int + double
+*** Error at (15,5): incompatible operands: int = double
+*** Error at (15,11): incompatible operands: double + int
+*** Error at (16,9): incompatible operands: int + string
+*** Error at (17,9): incompatible operands: int + bool
+*** Error at (18,9): incompatible operands: int + null
+*** Error at (20,9): incompatible operands: int - double
+*** Error at (21,9): incompatible operands: int * double
+*** Error at (22,9): incompatible operands: int / double
+*** Error at (24,9): incompatible operands: int % double
+*** Error at (25,11): incompatible operands: double % double
+*** Error at (34,5): incompatible operands: int = double
+*** Error at (35,5): incompatible operands: double = int
+*** Error at (36,5): incompatible operands: bool = int
+*** Error at (37,5): incompatible operands: string = null
+*** Error at (38,5): incompatible operands: string = int
+*** Error at (39,5): incompatible operands: class : Main = int
+*** Error at (45,11): incompatible operands: double < int
+*** Error at (47,9): incompatible operands: int < double
+*** Error at (48,9): incompatible operands: int < bool
+*** Error at (49,9): incompatible operands: int < string
+*** Error at (50,9): incompatible operands: int < null
+*** Error at (52,9): incompatible operands: int <= double
+*** Error at (53,9): incompatible operands: int > double
+*** Error at (54,9): incompatible operands: int >= double
+*** Error at (59,9): incompatible operands: int && bool
+*** Error at (60,13): incompatible operands: bool && int
+*** Error at (61,11): incompatible operands: double && bool
+*** Error at (62,14): incompatible operands: string && bool
+*** Error at (63,12): incompatible operands: null && bool
+*** Error at (65,9): incompatible operands: int || bool
+*** Error at (70,7): incompatible operand: ! int
+*** Error at (71,7): incompatible operand: ! double
+*** Error at (72,7): incompatible operand: ! string
+*** Error at (73,7): incompatible operand: ! null

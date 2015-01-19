@@ -1,0 +1,73 @@
+#ifndef MYCONTAINER_H
+#define MYCONTAINER_H
+#include <iostream>
+using namespace std;
+struct Node
+{
+	int num;
+	Node* next;
+};
+
+class iterator
+{
+	Node* iter;
+public:
+	iterator(){iter=MyContainer::head;}
+	iterator(const iterator &x){iter=x.iter;)
+	iterator& operator=(const iterator &x)//重载iterator的=
+	{
+		iter=x.iter;
+		return *this;
+	}
+	bool operator==(const iterator &x) const//重载iterator的==
+	{
+		return iter==x.iter;
+	}
+	bool operator!=(const iterator &x) const//重载iterator的!=
+	{
+		return iter!=x.iter;
+	}
+	iterator& operator++()//重载iterator的前缀++
+	{
+		iter=iter->next;
+		return *this;
+	}
+	iterator operator++(int)//重载iterator的后缀++
+	{
+		iterator before(iter);
+		iter=iter->next;
+		return before;
+	}
+};
+
+class MyContainer
+{
+private:
+   struct Node;
+   class iterator;
+   int size;
+   Node* head;
+public:
+   MyContainer() {Initialize();}
+   void Initialize();
+   void AddData(int num);
+   bool GetData (int index,int &num) const;
+   void DelData(int index);
+   int FindData (int num) const;
+   int GetSize()  const;			
+   bool IsEmpty() const;			
+   void Copy(MyContainer &cont);	
+   void Append(MyContainer &cont);	
+   void Reverse();
+   void ClearData();
+   iterator begin();
+   iterator end();
+   void push_back(int);
+   void pop_back();
+   bool operator==(const MyContainer &x) const;
+   bool operator!=(const MyContainer &x) const;
+};
+
+
+
+#endif

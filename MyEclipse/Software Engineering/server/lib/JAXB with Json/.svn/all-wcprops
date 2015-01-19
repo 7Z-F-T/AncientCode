@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/62/server/trunk/lib/JAXB%20with%20Json
+END
+jaxb-api-2.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/27/server/trunk/lib/JAXB%20with%20Json/jaxb-api-2.1.jar
+END
+jackson-lgpl-0.9.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/27/server/trunk/lib/JAXB%20with%20Json/jackson-lgpl-0.9.4.jar
+END
+jettison-1.0.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/27/server/trunk/lib/JAXB%20with%20Json/jettison-1.0.1.jar
+END
+jackson-asl-0.9.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/62/server/trunk/lib/JAXB%20with%20Json/jackson-asl-0.9.4.jar
+END
+jettison-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/62/server/trunk/lib/JAXB%20with%20Json/jettison-1.1.jar
+END
+activation-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/27/server/trunk/lib/JAXB%20with%20Json/activation-1.1.jar
+END
+jaxb-impl-2.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/27/server/trunk/lib/JAXB%20with%20Json/jaxb-impl-2.1.jar
+END
+stax-api-1.0-2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/27/server/trunk/lib/JAXB%20with%20Json/stax-api-1.0-2.jar
+END
+jaxb-impl-2.1.11.jar
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/62/server/trunk/lib/JAXB%20with%20Json/jaxb-impl-2.1.11.jar
+END

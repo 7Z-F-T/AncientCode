@@ -1,0 +1,1 @@
+INDEX VERSION 1.121+E:\编程\Eclipse_Java\Java程序设计与训练\.metadata\.plugins\org.eclipse.jdt.core

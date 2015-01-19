@@ -1,0 +1,8 @@
+class Main {
+    static void main() {
+        Print(new Main(), 1.2);
+        if (true)
+            break;
+        return 1;
+    }
+}

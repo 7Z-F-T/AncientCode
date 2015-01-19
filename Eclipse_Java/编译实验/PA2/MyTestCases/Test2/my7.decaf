@@ -1,0 +1,58 @@
+class Main{
+	static void main(){
+		return 1;
+	}
+	void foo9(){
+		bool a;
+		a = 1 == 1;		
+		a = 1.0 == 2.0;
+		a = "true" == "false";
+		a = true == false;
+		a = new int[1] == new int[2];
+		a = new double[1] == new double[2];
+		a = null == null;
+		a = null == new B();
+		a = new B() == null;
+		a = new A() == new B();
+		a = new B() == new A();
+		a = new class A[1] == new class B[2];
+		
+		a = 1 == 2.0;
+		a = new int[1] == new double[2];
+		a = new Main() == new B();
+		a = new B() == new Main();
+		a = new A() == new Main();
+		a = new class B[1] == new class Main[2];
+	}
+	void foo10(){
+		int[] i;		
+		class A[] oa;				
+		i = new int[1];		
+		oa = new class A[1];		
+		
+		i = new void[1];
+		i = new double[1];
+		i = new string[1];
+		i = new bool[1];
+		i = new class A[1];
+		i = new int[][1];
+		oa = new int[1];
+		oa = new class B[1];
+		i = new int[1.0];
+		
+		int[][] ii;		
+		class A[][] aa;
+		ii = new int[][1];
+		aa = new class A[][1];
+		
+		aa = new class A[1];
+		aa = new class B[][1];
+	}
+}
+
+class A{
+
+}
+class B extends A{
+
+}

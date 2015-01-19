@@ -1,0 +1,147 @@
+program
+    class Main <empty>
+        func foo voidtype
+            formals
+            stmtblock
+                vardecl a inttype
+                vardecl b doubletype
+                assign
+                    varref a
+                    varref b
+                call foo
+                    <empty>
+                    varref a
+                    varref b
+                assign
+                    varref a
+                    call foo
+                        <empty>
+                        varref a
+                assign
+                    varref a
+                    add
+                        varref a
+                        varref b
+                assign
+                    varref a
+                    mul
+                        varref a
+                        varref b
+                assign
+                    varref a
+                    sub
+                        varref a
+                        varref b
+                assign
+                    varref a
+                    div
+                        varref a
+                        varref b
+                assign
+                    varref a
+                    mod
+                        varref a
+                        varref b
+                assign
+                    varref a
+                    equ
+                        varref a
+                        varref b
+                assign
+                    varref a
+                    neq
+                        varref a
+                        varref b
+                assign
+                    varref a
+                    gtr
+                        varref a
+                        varref b
+                assign
+                    varref a
+                    les
+                        varref a
+                        varref b
+                assign
+                    varref a
+                    geq
+                        varref a
+                        varref b
+                assign
+                    varref a
+                    leq
+                        varref a
+                        varref b
+                assign
+                    varref a
+                    and
+                        varref a
+                        varref b
+                assign
+                    varref a
+                    or
+                        varref a
+                        varref b
+                assign
+                    varref a
+                    neg
+                        varref a
+                assign
+                    varref a
+                    not
+                        varref a
+                assign
+                    varref a
+                    varref a
+                assign
+                    varref a
+                    add
+                        varref a
+                        mul
+                            varref b
+                            varref b
+                assign
+                    varref a
+                    add
+                        varref a
+                        mul
+                            varref b
+                            neg
+                                varref a
+                assign
+                    varref a
+                    or
+                        varref a
+                        gtr
+                            varref a
+                            sub
+                                varref a
+                                mod
+                                    div
+                                        varref a
+                                        varref b
+                                    varref a
+                assign
+                    varref a
+                    intconst 1
+                assign
+                    varref a
+                    doubleconst 1.0
+                assign
+                    varref a
+                    doubleconst 1.0
+                assign
+                    varref a
+                    doubleconst 1000.0
+                assign
+                    varref a
+                    boolconst true
+                assign
+                    varref a
+                    boolconst false
+                assign
+                    varref a
+                    stringconst "hello"
+                assign
+                    varref a
+                    null

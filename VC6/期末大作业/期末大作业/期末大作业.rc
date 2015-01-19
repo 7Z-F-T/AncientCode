@@ -1,0 +1,617 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\期末大作业.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.chs\\afxdb.rc""           // Database resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\期末大作业.ico"
+IDR_MYTYPE              ICON    DISCARDABLE     "res\\期末大作业Doc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_BITMAP2             BITMAP  DISCARDABLE     "pic.bmp"
+IDB_BITMAP1             BITMAP  DISCARDABLE     "pic1.bmp"
+IDR_PLAY                BITMAP  DISCARDABLE     "res\\toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_RECORD_FIRST
+    BUTTON      ID_RECORD_PREV
+    BUTTON      ID_RECORD_NEXT
+    BUTTON      ID_RECORD_LAST
+    SEPARATOR
+    BUTTON      ID_RECORD_ADD
+    BUTTON      ID_RECORD_DELETE
+    BUTTON      ID_RECORD_UPDATE
+    BUTTON      ID_RECORD_MOVETO
+    BUTTON      ID_RECORD_SORT
+    BUTTON      ID_RECORD_SEARCH
+    SEPARATOR
+    BUTTON      ID_CALCULATE
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_PLAY TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_OPER_OPENV
+    BUTTON      ID_OPER_PLAYV
+    BUTTON      ID_OPER_PAUSE
+    BUTTON      ID_OPER_STOPV
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "记录(&R)"
+    BEGIN
+        MENUITEM "第一个记录(&F)",              ID_RECORD_FIRST
+        MENUITEM "前一个记录(&P)",              ID_RECORD_PREV
+        MENUITEM "下一个记录(&N)",              ID_RECORD_NEXT
+        MENUITEM "最后一个记录(&L)",            ID_RECORD_LAST
+        MENUITEM SEPARATOR
+        MENUITEM "新增一个记录(&A)",            ID_RECORD_ADD
+        MENUITEM "删除当前记录(&D)",            ID_RECORD_DELETE
+        MENUITEM "更新记录",                    ID_RECORD_UPDATE
+        MENUITEM "移动到指定记录(&M)...",       ID_RECORD_MOVETO
+        MENUITEM SEPARATOR
+        MENUITEM "按...排序(&T)...",            ID_RECORD_SORT
+        MENUITEM "查找(&F)...",                 ID_RECORD_SEARCH
+    END
+    POPUP "计算(&C)"
+    BEGIN
+        MENUITEM "排序并计算平方和(&C)...",     ID_CALCULATE
+    END
+    POPUP "绘图(I)"
+    BEGIN
+        MENUITEM "开始绘图(&B)",                ID_PAINT
+        MENUITEM "放大(&A)",                    ID_BIGGER
+        MENUITEM "缩小(&D)",                    ID_SMALLER
+    END
+    POPUP "播放操作(&P)"
+    BEGIN
+        MENUITEM "打开视频音频文件(&O)...",     ID_OPER_OPENV
+        MENUITEM "开始播放(&P)",                ID_OPER_PLAYV
+        MENUITEM "暂停播放(&U)",                ID_OPER_PAUSE
+        MENUITEM "停止播放(&S)",                ID_OPER_STOPV
+    END
+    POPUP "查看(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 期末大作业(&A)...",      ID_APP_ABOUT
+    END
+END
+
+IDR_MENU_POP MENU DISCARDABLE 
+BEGIN
+    POPUP "POP"
+    BEGIN
+        MENUITEM "开始绘图(&B)",                ID_PAINT
+        MENUITEM "放大(&A)",                    ID_BIGGER
+        MENUITEM "缩小(&D)",                    ID_SMALLER
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 79
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 期末大作业"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,21
+    LTEXT           "期末大作业 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C)",IDC_STATIC,39,26,58,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "感谢黄维通老师的指导！",IDC_STATIC,40,50,133,13
+    LTEXT           " 侯杰 清华大学 结52 2005010130  2006年6月",IDC_STATIC,
+                    35,38,170,10
+END
+
+IDD_MY_FORM DIALOG DISCARDABLE  0, 0, 656, 413
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "编号",IDC_STATIC,41,31,33,20
+    LTEXT           "性别",IDC_STATIC,42,81,30,20
+    LTEXT           "姓名",IDC_STATIC,42,55,39,20
+    LTEXT           "年龄",IDC_STATIC,42,109,30,20
+    LTEXT           "部门",IDC_STATIC,43,137,35,20
+    EDITTEXT        IDC_EDIT1,89,29,44,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,90,53,44,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,90,79,44,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,90,107,44,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,90,135,44,16,ES_AUTOHSCROLL
+    CONTROL         "",IDC_OCX1,"{6BF52A52-394A-11D3-B153-00C04F79FAA6}",
+                    WS_TABSTOP,126,32,6,6
+    PUSHBUTTON      "打开",ID_OPER_OPENV,361,381,44,24
+    PUSHBUTTON      "播放",ID_OPER_PLAYV,412,381,44,24
+    PUSHBUTTON      "暂停",ID_OPER_PAUSE,463,381,44,24
+    CONTROL         "Slider1",IDC_SLIDER1,"msctls_trackbar32",TBS_VERT | 
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,7,203,21,54
+    LTEXT           "缩放滑棒",IDC_STATIC,7,257,17,20
+    PUSHBUTTON      "停止",ID_OPER_STOPV,515,381,44,24
+END
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "移动到指定记录"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,130,7,50,14
+    PUSHBUTTON      "取消",IDCANCEL,130,24,50,14
+    LTEXT           "移动到记录",IDC_STATIC,23,24,46,15
+    LTEXT           "(请输入编号)",IDC_STATIC,20,42,51,19
+    EDITTEXT        IDC_EDIT1,73,23,39,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG2 DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "排序"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,130,7,50,14
+    PUSHBUTTON      "取消",IDCANCEL,130,24,50,14
+    LTEXT           "按",IDC_STATIC,21,15,14,13
+    EDITTEXT        IDC_EDIT1,38,14,37,13,ES_AUTOHSCROLL
+    LTEXT           "排序",IDC_STATIC,80,16,39,17
+    LTEXT           "(例如:姓名)",IDC_STATIC,39,36,43,15
+END
+
+IDD_DIALOG3 DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "查找"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,38,77,50,14
+    PUSHBUTTON      "取消",IDCANCEL,97,77,50,14
+    LTEXT           "在",IDC_STATIC,15,16,12,13
+    EDITTEXT        IDC_EDIT1,32,13,33,16,ES_AUTOHSCROLL
+    LTEXT           "中",IDC_STATIC,73,16,14,11
+    LTEXT           "查找",IDC_STATIC,88,16,16,13
+    EDITTEXT        IDC_EDIT2,113,13,33,16,ES_AUTOHSCROLL
+    LTEXT           "(例如:在姓名中查找胡宏)",IDC_STATIC,40,43,100,17
+END
+
+IDD_DIALOG4 DIALOG DISCARDABLE  0, 0, 187, 182
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "排序 计算平方和"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,130,7,50,14
+    PUSHBUTTON      "取消",IDCANCEL,130,24,50,14
+    LTEXT           "请输入5个数",IDC_STATIC,14,19,50,22
+    EDITTEXT        IDC_EDIT1,20,45,45,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,20,64,45,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,20,83,45,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,20,102,45,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,20,121,45,16,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG5 DIALOG DISCARDABLE  0, 0, 187, 184
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "排序 计算平方和"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,130,7,50,14
+    PUSHBUTTON      "取消",IDCANCEL,130,24,50,14
+    LTEXT           "排序后为",IDC_STATIC,18,18,47,23
+    EDITTEXT        IDC_EDIT1,24,54,38,16,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT2,24,72,38,16,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT3,24,90,38,16,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT4,24,108,38,16,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT5,24,125,38,16,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "平方和为",IDC_STATIC,100,57,46,22
+    EDITTEXT        IDC_EDIT6,101,97,60,18,ES_AUTOHSCROLL | WS_DISABLED
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "期末大作业 Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "期末大作业\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2006\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "期末大作业.EXE\0"
+            VALUE "ProductName", "期末大作业 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+
+    IDD_MY_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 649
+        TOPMARGIN, 7
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_DIALOG4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_DIALOG5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 177
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_MY_FORM DLGINIT
+BEGIN
+    IDC_OCX1, 0x376, 178, 0
+0x0000, 0x0000, 0x0300, 0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 0x0005, 
+0x0000, 0x0000, 0x0000, 0x3ff0, 0x0003, 0x0000, 0x0000, 0x0005, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 0x0003, 0x0001, 
+0x0000, 0x000b, 0xffff, 0x0003, 0x0000, 0x0000, 0x000b, 0xffff, 0x0008, 
+0x0002, 0x0000, 0x0000, 0x0003, 0x0032, 0x0000, 0x000b, 0x0000, 0x0008, 
+0x0014, 0x0000, 0x0069, 0x006e, 0x0076, 0x0069, 0x0073, 0x0069, 0x0062, 
+0x006c, 0x0065, 0x0000, 0x000b, 0x0000, 0x000b, 0x0000, 0x000b, 0xffff, 
+0x000b, 0xffff, 0x000b, 0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 0x0008, 
+0x0002, 0x0000, 0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 0x0008, 0x0002, 
+0x0000, 0x0000, 0x000b, 0xffff, 0x00ee, 0x0000, 0x00ee, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_FAILED_OPEN_DATABASE "无法打开数据库。"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "期末大作业\n\nMy\n\n\nMy.Document\nMy Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "期末大作业"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_RECORD_FIRST         "移到第一个记录\n第一个记录"
+    ID_RECORD_LAST          "移到最后一个的记录\n最后一个记录"
+    ID_RECORD_NEXT          "移到下一个记录\n下一记录"
+    ID_RECORD_PREV          "移到前一个记录\n前一记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_RECORD_ADD           "新增一个记录\n新增记录"
+    ID_RECORD_DELETE        "删除当前记录\n删除"
+    ID_RECORD_UPDATE        "更新记录\n更新"
+    ID_RECORD_MOVETO        "移动到指定记录\n移动到"
+    ID_RECORD_SORT          "按指定项目排序\n排序"
+    ID_RECORD_SEARCH        "查找\n查找"
+    ID_CALCULATE            "排序并计算平方和\n计算"
+    ID_BIGGER               "放大图形\n放大"
+    ID_SMALLER              "缩小图形\n缩小"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OPER_OPENV           "打开播放的文件\n打开"
+    ID_OPER_PLAYV           "开始播放\n播放"
+    ID_OPER_STOPV           "停止播放\n停止"
+    ID_OPER_PAUSE           "暂停播放\n暂停"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\期末大作业.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#include "l.chs\afxdb.rc"           // Database resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

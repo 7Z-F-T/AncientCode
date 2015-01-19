@@ -1,0 +1,21 @@
+program
+    class Main <empty>
+        static func main voidtype
+            formals
+            stmtblock
+        func foo1 voidtype
+            formals
+            stmtblock
+        func foo2 inttype
+            formals
+            stmtblock
+        func foo3 doubletype
+            formals
+            stmtblock
+        func foo4 booltype
+            formals
+                vardecl a inttype
+                vardecl b doubletype
+                vardecl c booltype
+                vardecl d stringtype
+            stmtblock

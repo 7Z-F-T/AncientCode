@@ -1,0 +1,19 @@
+*** Error at (3,3): incompatible return: int given, void expected
+*** Error at (18,22): incompatible operands: class : A[] == class : B[]
+*** Error at (20,9): incompatible operands: int == double
+*** Error at (21,18): incompatible operands: int[] == double[]
+*** Error at (22,18): incompatible operands: class : Main == class : B
+*** Error at (23,15): incompatible operands: class : B == class : Main
+*** Error at (24,15): incompatible operands: class : A == class : Main
+*** Error at (25,22): incompatible operands: class : B[] == class : Main[]
+*** Error at (33,11): array element type must be non-void type
+*** Error at (34,5): incompatible operands: int[] = double[]
+*** Error at (35,5): incompatible operands: int[] = string[]
+*** Error at (36,5): incompatible operands: int[] = bool[]
+*** Error at (37,5): incompatible operands: int[] = class : A[]
+*** Error at (38,5): incompatible operands: int[] = int[][]
+*** Error at (39,6): incompatible operands: class : A[] = int[]
+*** Error at (40,6): incompatible operands: class : A[] = class : B[]
+*** Error at (41,15): new array length must be an integer
+*** Error at (48,6): incompatible operands: class : A[][] = class : A[]
+*** Error at (49,6): incompatible operands: class : A[][] = class : B[][]

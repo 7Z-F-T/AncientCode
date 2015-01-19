@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Layout resource="/server/WebRoot/WEB-INF/web.xml">
+ <TreeFormPage>
+  <Memento type="FileWebApp25">
+   <Memento collapsed="false" type="Web Descriptor 2.5"/>
+   <Memento collapsed="false" type="Context Params"/>
+   <Memento collapsed="false" type="Advanced"/>
+  </Memento>
+  <Memento type="WebAppSecurityConstraint">
+   <Memento collapsed="false" type="Security Constraint"/>
+   <Memento collapsed="false" type="Resource Collections"/>
+  </Memento>
+  <Memento type="">
+   <Memento collapsed="false" type="Properties Editor"/>
+  </Memento>
+  <Memento type="WebAppAuthConstraint">
+   <Memento collapsed="false" type="Auth Constraint"/>
+   <Memento collapsed="false" type="Security Roles"/>
+  </Memento>
+  <Memento type="WebAppFolderSecurityRoles">
+   <Memento collapsed="false" type="Security Roles"/>
+  </Memento>
+ </TreeFormPage>
+</Layout>

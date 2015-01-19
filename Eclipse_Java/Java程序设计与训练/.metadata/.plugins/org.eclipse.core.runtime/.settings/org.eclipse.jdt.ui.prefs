@@ -1,0 +1,24 @@
+#Sat Sep 13 10:46:21 CST 2008
+org.eclipse.jdt.ui.overrideannotation=true
+spelling_locale_initialized=true
+content_assist_disabled_computers=org.eclipse.jdt.ui.javaNoTypeProposalCategory\u0000org.eclipse.jdt.ui.spellingProposalCategory\u0000org.eclipse.jdt.ui.textProposalCategory\u0000org.eclipse.jdt.ui.templateProposalCategory\u0000org.eclipse.jdt.ui.javaTypeProposalCategory\u0000
+command=D\:\\Program Files\\Java\\jdk1.6.0_04\\bin\\javadoc.exe
+org.eclipse.jdt.ui.gettersetter.use.is=true
+formatter_profile=org.eclipse.jdt.ui.default.eclipse_profile
+org.eclipse.jdt.ui.text.templates_migrated=true
+useAnnotationsPrefPage=true
+eclipse.preferences.version=1
+org.eclipse.jface.textfont=1|Courier New|12.75|0|WINDOWS|1|-17|0|0|0|400|0|0|0|0|3|2|1|49|Courier New;
+tabWidthPropagated=true
+org.eclipse.jdt.ui.exception.name=e
+org.eclipse.jdt.ui.editor.tab.width=
+fontPropagated=true
+org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.javadoclocations.migrated=true
+proposalOrderMigrated=true
+org.eclipse.jdt.ui.formatterprofiles.version=11
+useQuickDiffPrefPage=true
+org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+formatter_settings_version=11
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.util.EventListener"><rhs name\="handler.MenuHandler$Windows"/><rhs name\="handler.MenuHandler$Exit"/><rhs name\="handler.MenuHandler$Motif"/><rhs name\="handler.ToolBoxHandler$RectangleButton"/><rhs name\="handler.ColorChooserHandler$lineColorChooser"/><rhs name\="handler.ToolBoxHandler$TextButton"/><rhs name\="handler.ToolBoxHandler$RoundRectangleButton"/><rhs name\="handler.ArcWidthHeightChooserHandler$ArcWidthChooser"/></lhs><lhs name\="java.awt.event.ActionListener"><rhs name\="handler.MenuHandler$Windows"/><rhs name\="handler.MenuHandler$Exit"/><rhs name\="handler.MenuHandler$Motif"/><rhs name\="handler.ToolBoxHandler$RectangleButton"/><rhs name\="handler.ColorChooserHandler$lineColorChooser"/><rhs name\="handler.ToolBoxHandler$TextButton"/><rhs name\="handler.ToolBoxHandler$RoundRectangleButton"/></lhs><lhs name\="java.awt.geom.Point2D"><rhs name\="java.awt.geom.Point2D$Double"/></lhs><lhs name\="java.lang.Cloneable"><rhs name\="java.awt.geom.Ellipse2D$Double"/><rhs name\="java.awt.geom.Rectangle2D$Double"/><rhs name\="java.awt.geom.Point2D$Double"/></lhs><lhs name\="java.awt.geom.Point2D$Double"><rhs name\="java.awt.geom.Point2D$Double"/></lhs><lhs name\="java.awt.geom.Ellipse2D"><rhs name\="java.awt.geom.Ellipse2D$Double"/></lhs><lhs name\="java.awt.geom.RectangularShape"><rhs name\="java.awt.geom.Ellipse2D$Double"/><rhs name\="java.awt.geom.Rectangle2D$Double"/></lhs><lhs name\="java.awt.Shape"><rhs name\="java.awt.geom.Ellipse2D$Double"/><rhs name\="java.awt.geom.Rectangle2D$Double"/></lhs><lhs name\="java.awt.geom.Ellipse2D$Double"><rhs name\="java.awt.geom.Ellipse2D$Double"/></lhs><lhs name\="java.awt.geom.Rectangle2D"><rhs name\="java.awt.geom.Rectangle2D$Double"/></lhs><lhs name\="java.awt.geom.Rectangle2D$Double"><rhs name\="java.awt.geom.Rectangle2D$Double"/></lhs><lhs name\="javax.swing.event.ChangeListener"><rhs name\="handler.ArcWidthHeightChooserHandler$ArcWidthChooser"/></lhs></history>
+org.eclipse.jdt.ui.text.code_templates_migrated=true

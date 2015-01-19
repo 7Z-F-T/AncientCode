@@ -1,0 +1,46 @@
+program
+    class Main <empty>
+        func foo voidtype
+            formals
+            stmtblock
+                assign
+                    arrref
+                        varref a
+                        intconst 3
+                    intconst 1
+                assign
+                    varref b
+                    readline
+                assign
+                    varref a
+                    readint
+                call foo
+                    this
+                assign
+                    varref b
+                        varref a
+                    varref c
+                assign
+                    varref a
+                    newobj A
+                assign
+                    varref b
+                    newarray inttype
+                        add
+                            intconst 4
+                            intconst 2
+                vardecl a classtype A
+                vardecl a arrtype inttype
+                vardecl a arrtype classtype A
+                assign
+                    varref b
+                    arrref
+                        newarray inttype
+                            intconst 3
+                        intconst 2
+                assign
+                    varref b
+                    arrref
+                        newarray classtype A
+                            intconst 3
+                        intconst 2

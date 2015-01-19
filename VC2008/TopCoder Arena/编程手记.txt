@@ -1,0 +1,36 @@
+2008.2.15 
+————————————————————————
+关于C++中stringstream的使用
+(头文件<sstream>)
+
+stringstream多用于类型转换
+任何传入stringstream的数据都会先自动转换成string再存入stringstream
+所以将任何数据传入stringstream再传出就完成了从任何数据类型向string类型的转换
+
+如何将数据传入stringstream ss
+1．ss<<"abc";
+      ss<<123;
+2.  ss.str("abc");
+     但不可 ss.str(123);
+
+如何将数据从stringstream传出至string str
+1.   ss>>str;
+2.   str=ss.str();
+
+注意stringstream里面的数据会累积的，越传越多。需清空时可以用ss.str("");
+也可以重新再建立一个stringstream对象来用。
+
+2008.2.15
+——————————————————————————
+大发现！vector<>里面可以套vector<>
+比如  vector<vector<int>> 这样相当于做了一个2维数组，不过是动态的！
+可以这样初始化大小:
+vector<vector<int> > vec(3,4) 
+就做出了一个3×4的数组，且内部所有元素被自动初始化为0
+
+2008.2.15
+——————————————————————————
+memset作用是初始化内存中的连续空间，所以一般只对数组操作
+用法为memset(内存空间首地址指针，希望的初始化值，需要操作的按字节计算的内存空间大小）
+比如我要将一个int a[10][10]里面的元素 都初始化成1
+操作为memset(a,1,sizeof(a));

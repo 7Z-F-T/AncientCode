@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;Parse&apos; to &apos;parse&apos;&#x0D;&#x0A;- Original project: &apos;DB&apos;&#x0D;&#x0A;- Original element: &apos;DB/src/Parse&apos;&#x0D;&#x0A;- Renamed element: &apos;DB/src/parse&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;Parse&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;Parse" name="parse" qualified="false" references="true" stamp="1229763773814" textual="false" version="1.0"/>
+</session>

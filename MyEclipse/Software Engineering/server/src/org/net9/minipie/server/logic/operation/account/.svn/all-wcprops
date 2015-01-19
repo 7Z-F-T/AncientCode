@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/179/server/trunk/src/org/net9/minipie/server/logic/operation/account
+END
+FindUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/123/server/trunk/src/org/net9/minipie/server/logic/operation/account/FindUser.java
+END
+FindMyContact.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/67/server/trunk/src/org/net9/minipie/server/logic/operation/account/FindMyContact.java
+END
+UpdateMyInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/123/server/trunk/src/org/net9/minipie/server/logic/operation/account/UpdateMyInfo.java
+END
+Search.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/123/server/trunk/src/org/net9/minipie/server/logic/operation/account/Search.java
+END
+DownloadMyInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/179/server/trunk/src/org/net9/minipie/server/logic/operation/account/DownloadMyInfo.java
+END
+ViewMyInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/78/server/trunk/src/org/net9/minipie/server/logic/operation/account/ViewMyInfo.java
+END
+UploadMyImage.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/175/server/trunk/src/org/net9/minipie/server/logic/operation/account/UploadMyImage.java
+END

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/26/server/trunk/.settings
+END
+org.eclipse.core.runtime.prefs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/19/server/trunk/.settings/org.eclipse.core.runtime.prefs
+END
+org.eclipse.wst.jsdt.ui.superType.name
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/10/server/trunk/.settings/org.eclipse.wst.jsdt.ui.superType.name
+END
+com.genuitec.eclipse.j2eedt.core.prefs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/25/server/trunk/.settings/com.genuitec.eclipse.j2eedt.core.prefs
+END
+org.eclipse.jdt.ui.prefs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/26/server/trunk/.settings/org.eclipse.jdt.ui.prefs
+END
+org.eclipse.wst.jsdt.ui.superType.container
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/10/server/trunk/.settings/org.eclipse.wst.jsdt.ui.superType.container
+END
+com.genuitec.eclipse.core.prefs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/25/server/trunk/.settings/com.genuitec.eclipse.core.prefs
+END
+com.genuitec.eclipse.ws.prefs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/10/server/trunk/.settings/com.genuitec.eclipse.ws.prefs
+END
+.jsdtscope
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/10/server/trunk/.settings/.jsdtscope
+END
+org.eclipse.wst.validation.prefs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/25/server/trunk/.settings/org.eclipse.wst.validation.prefs
+END

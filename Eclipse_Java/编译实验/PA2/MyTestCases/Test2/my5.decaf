@@ -1,0 +1,34 @@
+class Main{
+	int[] a;
+	static void main(){
+		int[] la;
+		new Main().foo();
+		la = new Main().a;
+		
+		this.foo();
+		la = a;
+		foo();		
+	}
+	void non_static(){
+		int[] la;
+		this.foo();
+		la = a;
+		foo();
+	}
+	void foo(){
+		Print(1, true, "3");
+		
+		Print(2.0);
+		Print(1, new int[1]);
+		Print(true, true, new Main());
+	}
+	void foo2(){
+		int i;
+		string s;
+		i = ReadInteger();
+		s = ReadLine();
+		
+		s = ReadInteger();
+		i = ReadLine();
+	}	
+}

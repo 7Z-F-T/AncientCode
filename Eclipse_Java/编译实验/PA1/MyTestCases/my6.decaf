@@ -1,0 +1,9 @@
+class Main{
+	void foo(){
+		a="";
+		a="hello";
+		a="\n\t\\\"";
+		a="aa
+		";
+	}
+}

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/152/server/trunk/src/org/net9/minipie/server/logic/operation/group
+END
+QuitGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/152/server/trunk/src/org/net9/minipie/server/logic/operation/group/QuitGroup.java
+END
+CreateGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/152/server/trunk/src/org/net9/minipie/server/logic/operation/group/CreateGroup.java
+END
+ListGroupMember.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/152/server/trunk/src/org/net9/minipie/server/logic/operation/group/ListGroupMember.java
+END
+ListGroupContact.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/152/server/trunk/src/org/net9/minipie/server/logic/operation/group/ListGroupContact.java
+END
+ConfirmInvatation.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/152/server/trunk/src/org/net9/minipie/server/logic/operation/group/ConfirmInvatation.java
+END
+JionGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/152/server/trunk/src/org/net9/minipie/server/logic/operation/group/JionGroup.java
+END
+ShareContactToGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/152/server/trunk/src/org/net9/minipie/server/logic/operation/group/ShareContactToGroup.java
+END

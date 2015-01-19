@@ -1,0 +1,9 @@
+*** Error at (3,3): incompatible return: int given, void expected
+*** Error at (27,9): incompatible operands: int == double
+*** Error at (28,10): incompatible operands: int[] == double[]
+*** Error at (29,10): incompatible operands: class : Main == class : B
+*** Error at (30,10): incompatible operands: class : B == class : Main
+*** Error at (31,10): incompatible operands: class : A == class : Main
+*** Error at (32,11): incompatible operands: class : B[] == class : Main[]
+*** Error at (33,11): incompatible operands: class : A[] == class : B[]
+*** Error at (35,9): incompatible operands: int != double

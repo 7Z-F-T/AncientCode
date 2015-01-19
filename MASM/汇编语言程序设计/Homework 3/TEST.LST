@@ -1,0 +1,105 @@
+Microsoft (R) Macro Assembler Version 5.00                  9/6/8                                                             Page     1-1
+
+
+				 
+				  
+				 STORE		MACRO		X,N 
+							MOV		X+I,I 
+				I=I+1 
+							IF		
+					I-N 
+							STORE		X,N 
+							ENDIF 
+							ENDM 
+				 
+				 
+				  
+				     
+				 
+				 
+ 0000				data segment 
+ 0000  0064 0032 000A 000F	    OPERAND dw 100,50,10,15,24,2 
+       0018 0002		
+ 000C  0006			    COUNT dw 6 
+ 000E  ????			    RESULT dw ? 
+ 0010  ????			    TAB dw ? 
+ 0012  ????			    DAT dw ? 
+ 0014				data ends 
+				 
+ 0000				code segment 
+ 0000				    main proc far 
+				    assume cs:code,ds:data 
+ 0000				start: 
+ 0000  B8 ---- R		    mov ax,data 
+ 0003  8E D8			    mov ds,ax 
+				    ;main part 
+ = 0000				    I=0 
+				    STORE TAB,7 
+ 0005  C7 06 0010 R 0000     1				MOV		TAB+I,I
+				 
+ 000B  C7 06 0011 R 0001     2				MOV		TAB+I,I
+				 
+ 0011  C7 06 0012 R 0002     3				MOV		TAB+I,I
+				 
+ 0017  C7 06 0013 R 0003     4				MOV		TAB+I,I
+				 
+ 001D  C7 06 0014 R 0004     5				MOV		TAB+I,I
+				 
+ 0023  C7 06 0015 R 0005     6				MOV		TAB+I,I
+				 
+ 0029  C7 06 0016 R 0006     7				MOV		TAB+I,I
+				 
+				    ;exit 
+ 002F  B8 4C00			    mov ax,4c00h 
+ 0032  CD 21			    int 21h 
+ 0034				    main endp 
+ 0034				code ends 
+				    end start 
+
+Microsoft (R) Macro Assembler Version 5.00                  9/6/8                                                             Symbols-1
+
+
+Macros:
+
+		N a m e			Lines
+
+STORE  . . . . . . . . . . . . .  	   5
+
+Segments and Groups:
+
+                N a m e         	Length	 Align	Combine Class
+
+CODE . . . . . . . . . . . . . .  	0034	PARA	NONE	
+DATA . . . . . . . . . . . . . .  	0014	PARA	NONE	
+
+Symbols:            
+
+                N a m e         	Type	 Value	 Attr
+
+COUNT  . . . . . . . . . . . . .  	L WORD	000C	DATA
+
+DAT  . . . . . . . . . . . . . .  	L WORD	0012	DATA
+
+I  . . . . . . . . . . . . . . .  	NUMBER	0007	
+
+MAIN . . . . . . . . . . . . . .  	F PROC	0000	CODE	Length = 0034
+
+OPERAND  . . . . . . . . . . . .  	L WORD	0000	DATA
+
+RESULT . . . . . . . . . . . . .  	L WORD	000E	DATA
+
+START  . . . . . . . . . . . . .  	L NEAR	0000	CODE
+
+TAB  . . . . . . . . . . . . . .  	L WORD	0010	DATA
+
+@FILENAME  . . . . . . . . . . .  	TEXT  test		
+
+
+     38 Source  Lines
+     73 Total   Lines
+     13 Symbols
+
+  49162 + 380790 Bytes symbol space free
+
+      0 Warning Errors
+      0 Severe  Errors

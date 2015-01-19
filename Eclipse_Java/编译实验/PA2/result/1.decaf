@@ -1,0 +1,24 @@
+class Main{
+	int d;
+	class A Main;
+	static void main(){}
+	int math(string math){
+		double i;
+		i=math(math);
+		d();
+		class Main Main;
+		this.d=Main.func(this.Main.func(new Main()));
+		i=Main.func;
+	}
+	static string func(class Main a){}
+
+}
+
+class A extends B{
+	
+}
+class B {
+static class Main func(class Main a){
+		return Main.math();
+	}
+}

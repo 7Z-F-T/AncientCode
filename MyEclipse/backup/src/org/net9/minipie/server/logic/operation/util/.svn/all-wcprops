@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/190/server/trunk/src/org/net9/minipie/server/logic/operation/util
+END
+UpdateHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/111/server/trunk/src/org/net9/minipie/server/logic/operation/util/UpdateHandler.java
+END
+UserDelHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/111/server/trunk/src/org/net9/minipie/server/logic/operation/util/UserDelHandler.java
+END
+DelHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/111/server/trunk/src/org/net9/minipie/server/logic/operation/util/DelHandler.java
+END
+UserEditHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/190/server/trunk/src/org/net9/minipie/server/logic/operation/util/UserEditHandler.java
+END
+EditHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/112/server/trunk/src/org/net9/minipie/server/logic/operation/util/EditHandler.java
+END
+UserAddHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/111/server/trunk/src/org/net9/minipie/server/logic/operation/util/UserAddHandler.java
+END
+AddHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/111/server/trunk/src/org/net9/minipie/server/logic/operation/util/AddHandler.java
+END

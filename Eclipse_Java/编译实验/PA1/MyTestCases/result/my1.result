@@ -1,0 +1,11 @@
+program
+    class Main <empty>
+        vardecl a inttype
+        vardecl b doubletype
+        vardecl c booltype
+        vardecl d stringtype
+    class A Main
+        vardecl a inttype
+        vardecl b doubletype
+        vardecl c booltype
+        vardecl d stringtype

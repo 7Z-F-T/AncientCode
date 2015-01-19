@@ -1,0 +1,44 @@
+class Main{
+	static void main(){
+		return 1;
+	}
+	void foo8(){
+		bool a;
+		class A oa;
+		class B ob;
+		class Main om;
+		int[] ai;
+		double[] ad;
+		class A[] aoa;
+		class B[] aob;
+		class Main[] aom;
+		a = 1 == 1;		
+		a = 1.0 == 2.0;
+		a = "true" == "false";
+		a = true == false;
+		a = ai == ai;
+		a = ad == ad;
+		a = null == null;
+		a = null == ob;
+		a = ob == null;
+		a = oa == ob;
+		a = ob == oa;		
+		
+		a = 1 == 2.0;
+		a = ai == ad;
+		a = om == ob;
+		a = ob == om;
+		a = oa == om;
+		a = aob == aom;
+		a = aoa == aob;		
+		
+		a = 1 != 2.0;
+	}
+}
+
+class A{
+
+}
+class B extends A{
+
+}

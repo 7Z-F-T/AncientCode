@@ -1,0 +1,40 @@
+class Main{
+	void foo(){
+		int a;
+		double b;
+		a = b;
+		foo(a, b);
+	
+		a=foo(a);		
+
+		a=a+b;
+		a=a*b;
+		a=a-b;
+		a=a/b;
+		a=a%b;
+		a=a==b;
+		a=a!=b;
+		a=a>b;
+		a=a<b;
+		a=a>=b;
+		a=a<=b;
+		a=a&&b;
+		a=a||b;
+		a=-a;
+		a=!a;
+		a=(a);
+		
+		a=a+b*b;
+		a=a+b*-a;
+		a=a||a>a-a/b%a;
+		
+		a=1;
+		a=1.0;
+		a=1.;
+		a=1.e+3;
+		a=true;
+		a=false;
+		a="hello";
+		a=null;
+	}
+}

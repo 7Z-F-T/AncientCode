@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BinaryTree implemented by linked list", "BinaryTree implemented by linked list\BinaryTree implemented by linked list.vcproj", "{F65172E9-DFC5-4005-B364-182EB5F3F02C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F65172E9-DFC5-4005-B364-182EB5F3F02C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F65172E9-DFC5-4005-B364-182EB5F3F02C}.Debug|Win32.Build.0 = Debug|Win32
+		{F65172E9-DFC5-4005-B364-182EB5F3F02C}.Release|Win32.ActiveCfg = Release|Win32
+		{F65172E9-DFC5-4005-B364-182EB5F3F02C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

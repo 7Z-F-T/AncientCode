@@ -1,0 +1,28 @@
+import java.io.*;
+public class concat {
+	public static void main(String[] args) throws FileNotFoundException,IOException{
+		//definitions
+		FileReader fr;
+		FileWriter fw;
+		BufferedReader br;
+		BufferedWriter bw;
+		String s;//temp string for transfer
+		
+		fr=new FileReader(args[1]);//read from the second file
+		fw=new FileWriter(args[0],true);//write to the first file(the use of
+		                                //argument true is to append contents to the opened file) 
+		
+		br=new BufferedReader(fr);
+		bw=new BufferedWriter(fw);
+		
+		s=br.readLine();
+        while(s!=null){
+          	bw.write(s);
+          	s=br.readLine();
+        }
+		bw.flush();
+	}
+		
+
+}
+

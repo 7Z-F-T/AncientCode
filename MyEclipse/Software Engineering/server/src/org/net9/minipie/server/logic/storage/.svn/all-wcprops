@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/195/server/trunk/src/org/net9/minipie/server/logic/storage
+END
+Group_UserStorage.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/141/server/trunk/src/org/net9/minipie/server/logic/storage/Group_UserStorage.java
+END
+ContactStorage.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/195/server/trunk/src/org/net9/minipie/server/logic/storage/ContactStorage.java
+END
+TagStorage.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/95/server/trunk/src/org/net9/minipie/server/logic/storage/TagStorage.java
+END
+User_UserStorage.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/188/server/trunk/src/org/net9/minipie/server/logic/storage/User_UserStorage.java
+END
+GroupStorage.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/141/server/trunk/src/org/net9/minipie/server/logic/storage/GroupStorage.java
+END
+UserStorage.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/187/server/trunk/src/org/net9/minipie/server/logic/storage/UserStorage.java
+END
+Tag_ContactStorage.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/99/server/trunk/src/org/net9/minipie/server/logic/storage/Tag_ContactStorage.java
+END
+NotificationStorage.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/82/server/trunk/src/org/net9/minipie/server/logic/storage/NotificationStorage.java
+END
+StorageFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/137/server/trunk/src/org/net9/minipie/server/logic/storage/StorageFactory.java
+END
+Tag_UserStorage.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/99/server/trunk/src/org/net9/minipie/server/logic/storage/Tag_UserStorage.java
+END

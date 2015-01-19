@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/168/server/trunk/src/org/net9/minipie/server/data/field
+END
+InfoField.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/168/server/trunk/src/org/net9/minipie/server/data/field/InfoField.java
+END
+AddAsContactPermission.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/78/server/trunk/src/org/net9/minipie/server/data/field/AddAsContactPermission.java
+END
+Gender.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/60/server/trunk/src/org/net9/minipie/server/data/field/Gender.java
+END
+Relationships.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/64/server/trunk/src/org/net9/minipie/server/data/field/Relationships.java
+END
+Birthdate.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/91/server/trunk/src/org/net9/minipie/server/data/field/Birthdate.java
+END
+Permission.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/60/server/trunk/src/org/net9/minipie/server/data/field/Permission.java
+END
+NotificationType.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/60/server/trunk/src/org/net9/minipie/server/data/field/NotificationType.java
+END
+InfoType.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/60/server/trunk/src/org/net9/minipie/server/data/field/InfoType.java
+END

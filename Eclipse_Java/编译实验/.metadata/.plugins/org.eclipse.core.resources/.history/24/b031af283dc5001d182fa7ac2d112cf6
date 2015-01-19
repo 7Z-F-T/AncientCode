@@ -1,0 +1,28 @@
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+public class Main extends JFrame{
+	public static void main(String[] args) {
+		Main window=new Main();
+		window.go();
+	}
+	void go(){
+		setLayout(new GridLayout(2,1));
+		JPanel panel1=new JPanel();
+		JPanel panel2=new JPanel();
+		JLabel label1=new JLabel("…„ œ");
+		JLabel label2=new JLabel("ª™ œ");
+		JTextField text1=new JTextField(10);
+		JTextField text2=new JTextField(10);
+		panel1.add(label1);
+		panel2.add(label2);
+		panel1.add(text1);
+		panel2.add(text2);
+		add(panel1);
+		add(panel2);
+		setSize(200,200);
+		setVisible(true);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+
+}

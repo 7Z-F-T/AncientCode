@@ -1,0 +1,6 @@
+*** Error at (10,9): field 'length' not found in 'class : Main'
+*** Error at (11,12): field 'length' not found in 'class : Main'
+*** Error at (12,11): 'length' can only be applied to arrays
+*** Error at (13,11): 'length' can only be applied to arrays
+*** Error at (14,9): function 'length' expects 0 argument(s) but 1 given
+*** Error at (14,19): incompatible operands: int + double

@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/187/server/trunk/src/org/net9/minipie/server/logic/operation/user
+END
+ConfirmContactApply.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/179/server/trunk/src/org/net9/minipie/server/logic/operation/user/ConfirmContactApply.java
+END
+ShareUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/179/server/trunk/src/org/net9/minipie/server/logic/operation/user/ShareUser.java
+END
+ViewMyContactShadow.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/150/server/trunk/src/org/net9/minipie/server/logic/operation/user/ViewMyContactShadow.java
+END
+UpdateRelationship.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/130/server/trunk/src/org/net9/minipie/server/logic/operation/user/UpdateRelationship.java
+END
+AddUserAsContact.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/169/server/trunk/src/org/net9/minipie/server/logic/operation/user/AddUserAsContact.java
+END
+UpdateUserShadow.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/118/server/trunk/src/org/net9/minipie/server/logic/operation/user/UpdateUserShadow.java
+END
+RemoveUserContact.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/89/server/trunk/src/org/net9/minipie/server/logic/operation/user/RemoveUserContact.java
+END
+DownloadMyUserContact.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/187/server/trunk/src/org/net9/minipie/server/logic/operation/user/DownloadMyUserContact.java
+END
+ViewMyUserContact.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/182/server/trunk/src/org/net9/minipie/server/logic/operation/user/ViewMyUserContact.java
+END
+ListMyUserContact.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/183/server/trunk/src/org/net9/minipie/server/logic/operation/user/ListMyUserContact.java
+END
+ViewSharedUserContact.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/179/server/trunk/src/org/net9/minipie/server/logic/operation/user/ViewSharedUserContact.java
+END
+ListSharedUserContact.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/150/server/trunk/src/org/net9/minipie/server/logic/operation/user/ListSharedUserContact.java
+END
+SearchAllUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/182/server/trunk/src/org/net9/minipie/server/logic/operation/user/SearchAllUser.java
+END

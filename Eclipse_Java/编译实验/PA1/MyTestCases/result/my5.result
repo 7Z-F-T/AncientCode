@@ -1,0 +1,39 @@
+program
+    class Main <empty>
+        func foo voidtype
+            formals
+            stmtblock
+                return
+                    add
+                        varref a
+                        intconst 5
+                return
+                breakif
+                    boolconst true
+                    if
+                        boolconst false
+                        assign
+                            varref a
+                            intconst 1
+                    else
+                        assign
+                            varref a
+                            intconst 2
+                while
+                    assign
+                        varref a
+                        intconst 1
+                for
+                    <emtpy>
+                    boolconst true
+                    <emtpy>
+                    stmtblock
+                        assign
+                            varref b
+                            intconst 1
+                print
+                    varref a
+                    varref b
+                    add
+                        varref a
+                        intconst 1

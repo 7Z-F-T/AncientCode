@@ -1,0 +1,256 @@
+package handler;
+import frame.*;
+import frame.*;
+
+import java.awt.event.*;
+import java.awt.*;
+import java.util.*;
+import java.awt.geom.*;
+public class DrawHandler implements MouseMotionListener,MouseListener{
+	MainFrame frame;
+	MyCanvas canvas;
+	static ShapePro currentShapePro;
+	static ShapePro currentSelectedShapePro;
+	ArrayList<ShapePro> shapeProArray;
+	static int tempX=0;//鼠标落脚点
+	static int tempY=0;//鼠标落脚点
+	int dy;//计算用中间变量
+	int dx;//计算用中间变量
+	static int lastX;//计算用中间变量
+	static int lastY;//计算用中间变量
+	public DrawHandler(MainFrame frm, MyCanvas cv,ArrayList<ShapePro> sharray){
+		frame=frm;
+		canvas=cv;
+		shapeProArray=sharray;
+	}
+	public void mouseDragged(MouseEvent e){
+		//System.out.println("tempX"+tempX);
+		//System.out.println("tempY"+tempY);
+		switch(frame.currentFunction){
+		    case Function.RECTANGLE:
+		    	dx=e.getX()-tempX;
+		    	dy=e.getY()-tempY;
+		    	if(dx>=0)
+		    		((Rectangle2D.Double)(currentShapePro.shape)).width=dx;
+		    	else{
+		    		dx=0-dx;
+		    		((Rectangle2D.Double)(currentShapePro.shape)).width=dx;
+		    		((Rectangle2D.Double)(currentShapePro.shape)).x=tempX-dx;
+		    		
+		    	}
+		    	if(dy>=0)
+		    		((Rectangle2D.Double)(currentShapePro.shape)).height=dy;
+		    	else{
+		    		dy=0-dy;
+		    		((Rectangle2D.Double)(currentShapePro.shape)).height=dy;
+		    		((Rectangle2D.Double)(currentShapePro.shape)).y=tempY-dy;
+		    	}
+		    	canvas.repaint();
+		    	
+		    	break;
+		    case Function.LINE:
+		    	((Line2D.Double)(currentShapePro.shape)).x1=tempX;
+		    	((Line2D.Double)(currentShapePro.shape)).y1=tempY;
+		    	((Line2D.Double)(currentShapePro.shape)).x2=e.getX();
+		    	((Line2D.Double)(currentShapePro.shape)).y2=e.getY();
+		    	canvas.repaint();
+		    	
+		    	break;
+		    case Function.ELLIPSE:
+		    	dx=e.getX()-tempX;
+		    	dy=e.getY()-tempY;
+		    	if(dx>=0)
+		    		((Ellipse2D.Double)(currentShapePro.shape)).width=dx;
+		    	else{
+		    		dx=0-dx;
+		    		((Ellipse2D.Double)(currentShapePro.shape)).width=dx;
+		    		((Ellipse2D.Double)(currentShapePro.shape)).x=tempX-dx;
+		    		
+		    	}
+		    	if(dy>=0)
+		    		((Ellipse2D.Double)(currentShapePro.shape)).height=dy;
+		    	else{
+		    		dy=0-dy;
+		    		((Ellipse2D.Double)(currentShapePro.shape)).height=dy;
+		    		((Ellipse2D.Double)(currentShapePro.shape)).y=tempY-dy;
+		    	}
+		    	canvas.repaint();
+		    	break;
+		    case Function.SELECT:
+		    	if(currentSelectedShapePro!=null&&currentSelectedShapePro.selected==true){
+		    		//System.out.println("move");
+		    		//System.out.println("tempX"+tempX);
+		    		//System.out.println("tempY"+tempY);
+		    		//System.out.println(e.getX()-tempX);
+		    		switch(currentSelectedShapePro.shapeType){
+		    		case ShapeType.RECTANGLE:{
+		    			dx=e.getX()-lastX;
+		    			dy=e.getY()-lastY;
+		    			((Rectangle2D.Double)(currentSelectedShapePro.shape)).x+=dx;
+		    			((Rectangle2D.Double)(currentSelectedShapePro.shape)).y+=dy;
+		    			lastX=e.getX();
+		    			lastY=e.getY();
+		    			canvas.repaint();
+		    			break;
+		    		}
+		    		case ShapeType.ELLIPSE:{
+		    			dx=e.getX()-lastX;
+		    			dy=e.getY()-lastY;
+		    			((Ellipse2D.Double)(currentSelectedShapePro.shape)).x+=dx;
+		    			((Ellipse2D.Double)(currentSelectedShapePro.shape)).y+=dy;
+		    			lastX=e.getX();
+		    			lastY=e.getY();
+		    			canvas.repaint();
+		    			break;
+		    		}
+		    		case ShapeType.LINE:{
+		    			dx=e.getX()-lastX;
+		    			dy=e.getY()-lastY;
+		    			((Line2D.Double)(currentSelectedShapePro.shape)).x1+=dx;
+		    			((Line2D.Double)(currentSelectedShapePro.shape)).x2+=dx;
+		    			((Line2D.Double)(currentSelectedShapePro.shape)).y1+=dy;
+		    			((Line2D.Double)(currentSelectedShapePro.shape)).y2+=dy;
+		    			lastX=e.getX();
+		    			lastY=e.getY();
+		    			canvas.repaint();
+		    			break;
+		    		}
+		    		}
+		    	}
+		    	break;
+		    case Function.ROTATE:
+		    	if(currentSelectedShapePro!=null&&currentSelectedShapePro.selected==true){
+		    		currentSelectedShapePro.rotated=true;
+		    		double x=e.getX()-lastX;
+		    		double y=e.getY()-lastY;
+		    		currentSelectedShapePro.rotatedVecX+=x;
+		    		currentSelectedShapePro.rotatedVecY+=y;
+		    		canvas.repaint();
+		    		lastX=e.getX();
+		    		lastY=e.getY();
+		    		break;
+		    	}
+		    case Function.SCALE:
+		    	if(currentSelectedShapePro!=null&&currentSelectedShapePro.selected==true){
+		    		currentSelectedShapePro.scaled=true;
+		    		double x=e.getX()-lastX;
+		    		double y=e.getY()-lastY;
+		    		if(tempX>currentSelectedShapePro.getCenterPoint().x)
+		    			currentSelectedShapePro.scaledFactorX+=x/100;
+		    		else
+		    			currentSelectedShapePro.scaledFactorX-=x/100;
+		    		if(tempY>currentSelectedShapePro.getCenterPoint().y)
+		    			currentSelectedShapePro.scaledFactorY+=y/100;
+		    		else
+		    			currentSelectedShapePro.scaledFactorY-=y/100;
+		    		lastX=e.getX();
+		    		lastY=e.getY();
+		    		canvas.repaint();
+		    		break;
+		    	}
+		}
+	}
+	public void mouseMoved(MouseEvent e){
+	}
+	public void mousePressed(MouseEvent e){
+		switch(frame.currentFunction){
+			case Function.RECTANGLE:
+				currentShapePro=new ShapePro(new Rectangle2D.Double(e.getX(),e.getY(),0,0),
+					    frame.currentPaintProperty.currentStroke,
+						frame.currentPaintProperty.currentLineColor,
+						frame.currentPaintProperty.currentFillType,
+						frame.currentPaintProperty.currentFillColor,
+						frame.currentPaintProperty.currentGradientFillColor,
+						ShapeType.RECTANGLE,
+						false,
+						false,
+						1,1,
+						false,
+						1.0,1.0);
+				shapeProArray.add(currentShapePro);
+				tempX=e.getX();
+				tempY=e.getY();
+				break;
+			case Function.LINE:
+				currentShapePro=new ShapePro(new Line2D.Double(e.getX(),e.getY(),e.getX(),e.getY()),
+					    frame.currentPaintProperty.currentStroke,
+						frame.currentPaintProperty.currentLineColor,
+						FillType.SOLID,
+						frame.currentPaintProperty.currentFillColor,
+						frame.currentPaintProperty.currentGradientFillColor,
+						ShapeType.LINE,
+						false,
+						false,
+						0,0,
+						false,
+						1.0,1.0);
+				shapeProArray.add(currentShapePro);
+				tempX=e.getX();
+				tempY=e.getY();
+				break;
+			case Function.ELLIPSE:
+				currentShapePro=new ShapePro(new Ellipse2D.Double(e.getX(),e.getY(),e.getX(),e.getY()),
+					    frame.currentPaintProperty.currentStroke,
+						frame.currentPaintProperty.currentLineColor,
+						frame.currentPaintProperty.currentFillType,
+						frame.currentPaintProperty.currentFillColor,
+						frame.currentPaintProperty.currentGradientFillColor,
+						ShapeType.ELLIPSE,
+						false,
+						false,
+						0,0,
+						false,
+						1.0,1.0);
+				shapeProArray.add(currentShapePro);
+				tempX=e.getX();
+				tempY=e.getY();
+				break;
+			 //以上为绘制操作，以下情况均为选择，修改操作，在图形上摁下鼠标即可选中
+			 default:
+				tempX=e.getX();
+				tempY=e.getY();
+				lastX=tempX;
+				lastY=tempY;
+				System.out.println(tempX);
+				System.out.println(tempY);
+				ShapePro s=new ShapePro();
+				boolean flag=false;//标志位，true:点击在图形区域内 false:否则
+			
+				for(int i=shapeProArray.size()-1;i>=0;i--){
+					s=(ShapePro)shapeProArray.get(i);
+					//System.out.println(s.containsPro(tempX,tempY));
+					if(s.containsPro(tempX, tempY)){
+						flag=true;//点击在图形区域内了！
+						break;
+					}
+				}
+				if(flag==false){//当前鼠标没有点击在任何图形区域内
+					System.out.println("Not Select");
+					if(currentSelectedShapePro!=null){
+						//System.out.println("Deselect");
+						currentSelectedShapePro.selected=false;//取消上次的选择
+						canvas.repaint();
+					}
+				}
+				else{//鼠标点击在了图形s的区域内
+					System.out.println("Select!");
+					if(currentSelectedShapePro!=null)
+						currentSelectedShapePro.selected=false;
+					currentSelectedShapePro=s;
+					currentSelectedShapePro.selected=true;//设s为当前选中图形
+					canvas.repaint();
+				}
+				
+				break;
+		}
+	}
+	public void mouseReleased(MouseEvent e){
+	}
+	public void mouseEntered(MouseEvent e){
+	}
+	public void mouseExited(MouseEvent e){
+	}
+	public void mouseClicked(MouseEvent e){
+	}
+
+}

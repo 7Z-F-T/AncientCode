@@ -1,0 +1,7 @@
+实际上现在我应该试着把这个东西在mac上编译出来libdispatch，这样还能用它提供的一堆test程序来测试dispatch。但是编译时发现缺少不少头文件，还很不好找，看来搭出个可编译的环境比较困难，暂时先不编译了。直接看代码！
+
+/dispatch的.h文件里面是Snow Leopard给用户使用GCD编程用的头文件。
+除了里面的benchmark.h是留作测试用之外，其余.h都要看。
+这一步是看libdispatch提供了哪些api。
+
+再看/src里面的.c文件，了解之前看过的api是怎样实现的。

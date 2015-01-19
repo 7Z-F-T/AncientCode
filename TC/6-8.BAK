@@ -1,0 +1,15 @@
+#include "stdio.h"
+#include "string.h"
+void main()
+{
+char str[500];
+int length,words=0,i;
+gets(str);
+length=strlen(str);
+for(i=0;i<=length;i++)
+   if(str[i]==32) words++;
+printf("The number of words are:");
+printf("%d\n",words+1);
+}
+
+

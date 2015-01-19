@@ -1,0 +1,16 @@
+class Main{
+	static void main(){
+	}
+	void foo(){
+		class Main o;
+		int[] a;
+		int i;
+		a.length();
+		
+		i = o.length() + 1.0;
+		i = Main.length() + 1.0;
+		i = "s".length() + 1.0;
+		i = "s".length(1) + 1.0;
+		i = a.length(1) + 1.0;
+	}
+}

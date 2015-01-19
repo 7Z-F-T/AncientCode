@@ -1,0 +1,11 @@
+#Sat Jun 20 23:41:14 CST 2009
+TOMCAT_HOME=D\:\\Program Files\\Apache Software Foundation\\Tomcat 6.0
+TOMCAT_TEMP=D\:\\Program Files\\Apache Software Foundation\\Tomcat 6.0\\temp
+LIBRARY_PATH="D\:\\Program Files\\MyEclipse\\bin;D\:\\Program Files\\Apache Software Foundation\\Tomcat 6.0\\bin"
+TOMCAT_BASE=D\:\\Program Files\\Apache Software Foundation\\Tomcat 6.0
+ENDORSED_DIRS="D\:\\Program Files\\Apache Software Foundation\\Tomcat 6.0/common/endorsed"
+eclipse.preferences.version=1
+JDK_INSTALLATION_NAME=MyEclipse
+SERVER_ENABLEMENT=true
+JDK_HOME=D\:\\Program Files\\MyEclipse
+OPT_VM_ARGS=-Djava.security.auth.login.config\="E\:/for_en/for_minipie/minipie-jaas.config"

@@ -1,0 +1,61 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ImageProc - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/ImageProc.res" /d "_DEBUG" /d "_AFXDLL" "F:\yzg\社会工作\ProgramPractice\ImageProc\ImageProc.rc"" 
+Creating temporary file "C:\DOCUME~1\yzg\LOCALS~1\Temp\RSP42.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/ImageProc.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\yzg\社会工作\ProgramPractice\ImageProc\ChildFrm.cpp"
+"F:\yzg\社会工作\ProgramPractice\ImageProc\DlgDrawLine.cpp"
+"F:\yzg\社会工作\ProgramPractice\ImageProc\ImageProc.cpp"
+"F:\yzg\社会工作\ProgramPractice\ImageProc\ImageProcDoc.cpp"
+"F:\yzg\社会工作\ProgramPractice\ImageProc\ImageProcView.cpp"
+"F:\yzg\社会工作\ProgramPractice\ImageProc\MainFrm.cpp"
+]
+Creating command line "xicl6.exe @C:\DOCUME~1\yzg\LOCALS~1\Temp\RSP42.tmp" 
+Creating temporary file "C:\DOCUME~1\yzg\LOCALS~1\Temp\RSP43.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/ImageProc.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\yzg\社会工作\ProgramPractice\ImageProc\StdAfx.cpp"
+]
+Creating command line "xicl6.exe @C:\DOCUME~1\yzg\LOCALS~1\Temp\RSP43.tmp" 
+Creating temporary file "C:\DOCUME~1\yzg\LOCALS~1\Temp\RSP44.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/ImageProc.pdb" /debug /machine:I386 /out:"Debug/ImageProc.exe" /pdbtype:sept 
+".\Debug\ChildFrm.obj"
+".\Debug\DlgDrawLine.obj"
+".\Debug\ImageProc.obj"
+".\Debug\ImageProcDoc.obj"
+".\Debug\ImageProcView.obj"
+".\Debug\MainFrm.obj"
+".\Debug\StdAfx.obj"
+".\Debug\ImageProc.res"
+]
+Creating command line "xilink6.exe @C:\DOCUME~1\yzg\LOCALS~1\Temp\RSP44.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ChildFrm.cpp
+DlgDrawLine.cpp
+ImageProc.cpp
+ImageProcDoc.cpp
+ImageProcView.cpp
+MainFrm.cpp
+Generating Code...
+Linking...
+xilink6: executing 'C:\PROGRA~1\MICROS~2\VC98\Bin\link.exe'
+
+
+
+<h3>Results</h3>
+ImageProc.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

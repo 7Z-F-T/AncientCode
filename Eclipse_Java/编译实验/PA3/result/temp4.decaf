@@ -1,0 +1,28 @@
+class ABC{
+	int a;
+	void fabc(int x,int y){
+		this.a=5;
+		//Print(a);
+		Print(x,y);
+		ffabc(2,3);
+	}
+	void ffabc(int x,int y){
+		Print(x,x,y);
+		fffabc(6,7);
+	}
+	static void fffabc(int x,int y){
+		Print(x,x,x,y);
+	}
+}
+
+class Main{
+	int i;
+	static void main(){
+		class ABC abc;
+		ABC.fffabc(8,9);
+		abc=new ABC();
+		abc.fabc(4,5);
+		abc.fffabc(6,7);
+		
+	}
+}

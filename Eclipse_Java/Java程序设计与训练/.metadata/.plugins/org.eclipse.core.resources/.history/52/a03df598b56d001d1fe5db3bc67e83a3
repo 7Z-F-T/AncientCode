@@ -1,0 +1,26 @@
+import java.io.*;
+public class FileList {
+	public static void main(String[] args) {
+        list("./dir1/dir11/dir111",0);
+	}
+	public static void list(String path,int space){
+		File dir=new File(path);
+		String files[]=dir.list();
+		for(int i=0;i<files.length;i++){
+			//print spaces
+			for(int j=0;j<space;j++)
+				System.out.print(" ");
+			//print files
+			File f=new File(files[i]);
+			if(f.isFile()){
+				System.out.println(f);
+			}
+			/*else{
+				System.out.println("<"+f+">");
+				String newPath=path+"/"+f.toString();
+				list(newPath,space+4);
+			}*/
+		}
+	}
+
+}

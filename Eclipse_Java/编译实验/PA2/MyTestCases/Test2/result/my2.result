@@ -1,0 +1,18 @@
+*** Error at (13,5): incompatible operands: int = class : Main->void
+*** Error at (21,12): cannot access field 'c' from 'class : Main'
+*** Error at (22,20): cannot access field 'c' from 'int[]'
+*** Error at (23,13): cannot access field 'c' from 'string'
+*** Error at (25,10): field 'a' of 'class : A' not accessible here
+*** Error at (26,10): field 'nothing' not found in 'class : A'
+*** Error at (27,12): field 'nothing' not found in 'class : Main'
+*** Error at (32,6): function 'foo3' expects 6 argument(s) but 7 given
+*** Error at (33,6): function 'foo3' expects 6 argument(s) but 5 given
+*** Error at (34,11): incompatible argument 1: string given, int expected
+*** Error at (35,14): incompatible argument 2: string given, double expected
+*** Error at (36,42): incompatible argument 6: string given, int[] expected
+*** Error at (37,5): function 'foo4' expects 1 argument(s) but 2 given
+*** Error at (38,5): function 'foo4' expects 1 argument(s) but 0 given
+*** Error at (39,10): incompatible argument 1: double given, int expected
+*** Error at (40,6): function 'foo4' expects 1 argument(s) but 2 given
+*** Error at (41,6): function 'foo4' expects 1 argument(s) but 0 given
+*** Error at (42,11): incompatible argument 1: double given, int expected

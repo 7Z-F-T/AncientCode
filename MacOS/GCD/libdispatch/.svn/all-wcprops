@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/repository/libdispatch/!svn/ver/136/trunk
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/repository/libdispatch/!svn/ver/2/trunk/LICENSE
+END
+configure.ac
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repository/libdispatch/!svn/ver/132/trunk/configure.ac
+END
+INSTALL
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/repository/libdispatch/!svn/ver/81/trunk/INSTALL
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repository/libdispatch/!svn/ver/87/trunk/Makefile.am
+END
+autogen.sh
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/repository/libdispatch/!svn/ver/56/trunk/autogen.sh
+END

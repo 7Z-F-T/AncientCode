@@ -1,0 +1,23 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.geom.*;
+public class PaintTest {
+	public void PaintTest(){
+		JFrame frame=new JFrame("Paint");
+		MyCanvas c=new MyCanvas();
+		frame.getContentPane().add(c);
+		frame.setSize(400,400);
+		//frame.setVisible(true);
+	}
+	public static void main(String[] args) {
+		PaintTest p=new PaintTest();
+		
+		
+	}
+}
+class MyCanvas extends Canvas{
+	public void paint(Graphics g){
+		Graphics2D g2=(Graphics2D)g;
+		g2.draw(new Rectangle2D.Double(100,100,150,200));
+	}
+}

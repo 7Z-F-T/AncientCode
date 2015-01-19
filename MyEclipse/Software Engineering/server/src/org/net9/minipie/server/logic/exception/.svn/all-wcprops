@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/60/server/trunk/src/org/net9/minipie/server/logic/exception
+END
+UpdateException.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/60/server/trunk/src/org/net9/minipie/server/logic/exception/UpdateException.java
+END
+ErrorType.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/57/server/trunk/src/org/net9/minipie/server/logic/exception/ErrorType.java
+END

@@ -1,0 +1,53 @@
+function separate2(wavfile)
+
+[f,sample_rate,bit]=wavread(wavfile);
+f_fft=fft(f);
+L=length(f_fft);
+
+stop=1500;
+offset=2000;
+
+%low_pass wavfile to fs1
+w=fix(stop*L/sample_rate);
+
+for n=(w+1):(L-w)
+    fs1_fft(n)=0;
+end
+for n=1:w
+    fs1_fft(n)=f_fft(n);
+end
+for n=(L-w+1):L
+    fs1_fft(n)=f_fft(n);
+end
+
+%high_pass wavfile to fs2
+w=fix(stop*L/sample_rate);
+
+for n=(w+1):(L-w)
+    fs2_fft(n)=f_fft(n);
+end
+for n=1:w
+    fs2_fft(n)=0;
+end
+for n=(L-w+1):L
+    fs2_fft(n)=0;
+end
+
+%shift_lower fs2
+w=fix(offset*L/sample_rate);
+
+for n=1:(fix(L/2)-w)
+    fss2_fft(n)=fs2_fft(n+w);
+end
+for n=(fix(L/2)-w+1):fix(L/2)
+    fss2_fft(n)=0;
+end
+for n=(fix(L/2)+1):(fix(L/2)+w)
+    fss2_fft(n)=0;
+end
+for n=(fix(L/2)+w+1):L
+    fss2_fft(n)=fs2_fft(n-w);
+end
+
+%save into files separately
+wavwrite(ifft(

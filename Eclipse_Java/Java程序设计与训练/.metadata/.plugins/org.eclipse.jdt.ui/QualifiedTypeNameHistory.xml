@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.awt.geom.RoundRectangle2D.Double"/>
+<fullyQualifiedTypeName name="handler.MenuHandler.Windows"/>
+<fullyQualifiedTypeName name="handler.MenuHandler.Exit"/>
+<fullyQualifiedTypeName name="handler.MenuHandler.Motif"/>
+<fullyQualifiedTypeName name="handler.ToolBoxHandler.RectangleButton"/>
+<fullyQualifiedTypeName name="handler.ColorChooserHandler.lineColorChooser"/>
+<fullyQualifiedTypeName name="javax.swing.event.ChangeListener"/>
+<fullyQualifiedTypeName name="javax.swing.event.ChangeEvent"/>
+<fullyQualifiedTypeName name="handler.LineChooserHandler.LineStyleChooser"/>
+<fullyQualifiedTypeName name="java.awt.geom.Ellipse2D.Double"/>
+<fullyQualifiedTypeName name="handler.ToolBoxHandler.TextButton"/>
+<fullyQualifiedTypeName name="java.awt.geom.Rectangle2D.Double"/>
+<fullyQualifiedTypeName name="handler.ToolBoxHandler.RoundRectangleButton"/>
+<fullyQualifiedTypeName name="java.awt.Event"/>
+<fullyQualifiedTypeName name="handler.ArcWidthHeightChooserHandler.ArcWidthChooser"/>
+<fullyQualifiedTypeName name="javax.swing.JDialog"/>
+<fullyQualifiedTypeName name="frame.MainFrame"/>
+<fullyQualifiedTypeName name="java.awt.geom.Point2D.Double"/>
+</qualifiedTypeNameHistroy>

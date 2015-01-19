@@ -1,0 +1,55 @@
+class Main{
+	int x;
+	static void main(){
+	  //z=0;
+	}
+	static void function(int a,double b,class XYZ nb,string ss,int[] array){
+	}
+	class XYZ function2(){
+		class XYZ xyz;
+		xyz=new XYZ();
+		return xyz;
+	}
+}
+
+class XYZ{
+	int z;
+	class ABC haha2(){
+		class ABC ii;
+		ii=new ABC();
+		return ii;
+	}
+	class XYZ haha3(){
+		return this;
+	}
+}
+
+class ABC extends XYZ{
+	class XYZ c;
+	class ABC a;
+	int o;
+	class Main m;
+	class XYZ haha(){
+		class XYZ ii;
+		ii=new XYZ();
+		return ii;
+	}
+  void test(){
+			o=0;
+			int i;
+			double d;
+			m.function2().haha2().haha().haha2().o=0;
+			c=new XYZ();
+			a=new ABC();
+			int[] brrby;
+			brrby=new int[8];
+			c.haha2().haha().haha2().haha().haha2().haha().haha2();
+			Main.function(i,d,a,"sdf",brrby);
+			this.haha().z=9;
+			haha().haha3().z=0;
+			i=brrby.length();
+	}
+	void test2(){
+		  
+	}
+}

@@ -1,0 +1,17 @@
+import java.io.*;
+public class Test {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		String path="123.txt";
+		File dir=new File(path);
+		System.out.print(dir);
+		if(dir.exists()) System.out.println(dir+" exists");
+		if(dir.isFile()) System.out.println(dir+" is File");
+		else if(dir.isDirectory()) System.out.println(dir+" is Dir");
+
+	}
+
+}

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/62/server/trunk/lib/Jersey%201.0.3%20Bundle
+END
+jersey-bundle-1.0.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/27/server/trunk/lib/Jersey%201.0.3%20Bundle/jersey-bundle-1.0.3.jar
+END
+jsr311-api-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/27/server/trunk/lib/Jersey%201.0.3%20Bundle/jsr311-api-1.0.jar
+END
+jersey-bundle-1.1.0-ea.jar
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/62/server/trunk/lib/Jersey%201.0.3%20Bundle/jersey-bundle-1.1.0-ea.jar
+END
+jsr311-api-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/62/server/trunk/lib/Jersey%201.0.3%20Bundle/jsr311-api-1.1.jar
+END
+asm-3.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/27/server/trunk/lib/Jersey%201.0.3%20Bundle/asm-3.1.jar
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/178/server/trunk/src/org/net9/minipie/server/api/exception
+END
+NotFoundMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/26/server/trunk/src/org/net9/minipie/server/api/exception/NotFoundMapper.java
+END
+InvalidRequestMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/32/server/trunk/src/org/net9/minipie/server/api/exception/InvalidRequestMapper.java
+END
+ServerErrorMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/178/server/trunk/src/org/net9/minipie/server/api/exception/ServerErrorMapper.java
+END
+PermissionDeniedMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/60/server/trunk/src/org/net9/minipie/server/api/exception/PermissionDeniedMapper.java
+END

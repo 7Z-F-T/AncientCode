@@ -1,0 +1,20 @@
+import java.io.*;
+public class concat {
+
+	public static void main(String[] args) {
+		InputStreamReader isr;
+		BufferedReader br;
+		OutputStreamWriter osw;
+		BufferedWriter bw;
+		FileOutputStream fos;
+		
+		fos=new FileOutputStream("1.txt");
+		osw=new OutputStreamWriter(fos);
+		bw=new BufferedWriter(osw);
+		bw.write("abc");
+		bw.newLine();
+		bw.write("efg");
+
+	}
+
+}

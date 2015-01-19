@@ -1,0 +1,1 @@
+for %%m in (*.decaf) do java -jar decaf.jar -l 0 %%m > result\%%~nm.result 

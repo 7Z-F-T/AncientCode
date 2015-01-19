@@ -1,0 +1,344 @@
+package decaf.typecheck;
+import decaf.error.*;
+import decaf.ast.*;
+import decaf.Driver;
+import decaf.ast.ArrayRef;
+import decaf.ast.ArrayType;
+import decaf.ast.BoolType;
+import decaf.ast.ClassDefn;
+import decaf.ast.DoubleType;
+import decaf.ast.ExprStmt;
+import decaf.ast.Field;
+import decaf.ast.ForStmt;
+import decaf.ast.IntConst;
+import decaf.ast.IntType;
+import decaf.ast.LValue;
+import decaf.ast.NegExpr;
+import decaf.ast.NewObjExpr;
+import decaf.ast.NoActionASTVisitor;
+import decaf.ast.Program;
+import decaf.ast.Statement;
+import decaf.ast.StmtBlock;
+import decaf.ast.StringType;
+import decaf.ast.ThisExpr;
+import decaf.ast.VarDecl;
+import decaf.ast.VarRef;
+import decaf.ast.VoidType;
+import decaf.error.BadArrElementError;
+import decaf.error.ClassNotFoundError;
+import decaf.error.DecafError;
+import decaf.error.IncompatUnOpError;
+import decaf.error.NotArrayError;
+import decaf.error.RefNonStaticError;
+import decaf.error.SubNotIntError;
+import decaf.error.UndeclVarError;
+import decaf.scope.ScopeStack;
+import decaf.symbol.Class;
+import decaf.symbol.Function;
+import decaf.symbol.Symbol;
+import decaf.symbol.Variable;
+import decaf.type.BaseType;
+
+// TODO: 补充其它类型结点的检查函数，基本上所有的ast结点都需要相应的检查函数
+public class TypeCheck extends NoActionASTVisitor {
+
+	private ScopeStack table;
+
+	private Function currentFunction;
+	
+	private int loopCount;
+
+	public TypeCheck(ScopeStack table) {
+		this.table = table;
+		loopCount=0;
+	}
+
+	public static void checkType(Program tree) {
+		new TypeCheck(Driver.getDriver().getTable()).visit(tree);
+	}
+
+	@Override
+	public void visit(NegExpr negExpr) {
+		negExpr.expr.accept(this);
+		if (negExpr.expr.type.equal(BaseType.ERROR)
+				|| negExpr.expr.type.equal(BaseType.INT)
+				|| negExpr.expr.type.equal(BaseType.DOUBLE)) {
+			negExpr.type = negExpr.expr.type;
+		} else {
+			issueError(new IncompatUnOpError(negExpr.getLocation(), "-",
+					negExpr.expr.type.toString()));
+			negExpr.type = BaseType.ERROR;
+		}
+	}
+
+	public void visit(LValueExpr lvExpr){
+		lvExpr.lv.accept((this));
+		lvExpr.type=lvExpr.lv.type;
+	}
+
+	@Override
+	public void visit(IntConst intConst) {
+		intConst.type = BaseType.INT;
+	}
+	
+	public void visit(DoubleConst doubleConst) {
+		doubleConst.type = BaseType.DOUBLE;
+	}
+	
+	public void visit(BoolConst boolConst) {
+		boolConst.type = BaseType.BOOL;
+	}
+	
+	public void visit(StringConst stringConst) {
+		stringConst.type = BaseType.STRING;
+	}
+	
+	public void visit(ClassDefn classDefn) {
+		table.open(classDefn.symbol.getAssociatedScope());
+		for (Field f : classDefn.fields) {
+			f.accept(this);
+		}
+		table.close();
+	}
+	
+	public void visit(VarDecl varDecl){
+		varDecl.type.accept(this);
+	}
+	
+	
+	
+
+	@Override
+	public void visit(NewObjExpr newObjExpr) {
+		Class c = table.lookupClass(newObjExpr.className);
+		newObjExpr.symbol = c;
+		if (c == null) {
+			issueError(new ClassNotFoundError(newObjExpr.getLocation(),
+					newObjExpr.className));
+			newObjExpr.type = BaseType.ERROR;
+		} else {
+			newObjExpr.type = c.getType();
+		}
+	}
+
+	@Override
+	public void visit(ArrayRef arrayRef) {
+		arrayRef.lvKind = LValue.Kind.ARRAY_ELEMENT;
+		arrayRef.array.accept(this);
+		if (!arrayRef.array.type.isArrayType()) {
+			issueError(new NotArrayError(arrayRef.array.getLocation()));
+			arrayRef.type = BaseType.ERROR;
+		} else {
+			arrayRef.type = ((decaf.type.ArrayType) arrayRef.array.type)
+					.getElementType();
+		}
+		arrayRef.index.accept(this);
+		if (!arrayRef.index.type.equal(BaseType.INT)) {
+			issueError(new SubNotIntError(arrayRef.getLocation()));
+		}
+	}
+
+	@Override
+	public void visit(VarRef varRef) {
+		if (varRef.owner == null) {
+			Symbol v = table.lookupBeforeLocation(varRef.name, varRef
+					.getLocation());
+			if (v == null) {
+				issueError(new UndeclVarError(varRef.getLocation(), varRef.name));
+				varRef.type = BaseType.ERROR;
+			} else if (v.isVariable()) {
+				Variable var = (Variable) v;
+				varRef.type = var.getType();
+				varRef.symbol = var;
+				if (var.isLocalVar()) {
+					varRef.lvKind = LValue.Kind.LOCAL_VAR;
+				} else if (var.isParam()) {
+					varRef.lvKind = LValue.Kind.PARAM_VAR;
+				} else {
+					if (currentFunction.isStatik()) {
+						issueError(new RefNonStaticError(varRef.getLocation(),
+								currentFunction.getName(), varRef.name));
+					} else {
+						varRef.owner = new ThisExpr(varRef.getLocation());
+						varRef.owner.accept(this);
+					}
+					varRef.lvKind = LValue.Kind.MEMBER_VAR;
+				}
+			} else {
+				varRef.type = v.getType();
+				if (v.isClass()) {
+					if (varRef.usedForRef) {
+						varRef.isClass = true;
+					} else {
+						issueError(new UndeclVarError(varRef.getLocation(),
+								varRef.name));
+						varRef.type = BaseType.ERROR;
+					}
+
+				}
+			}
+		} else {
+			// TODO: owner != null
+		}
+	}
+
+	@Override
+	public void visit(Program program) {
+		table.open(program.globalScope);
+		for (ClassDefn cd : program.classes) {
+			cd.accept(this);
+		}
+		table.close();
+	}
+
+	public void visit(FuncDefn funcDefn){
+		funcDefn.returnType.accept(this);
+		currentFunction=funcDefn.symbol;
+		table.open(funcDefn.symbol.getAssociatedScope());
+		for (VarDecl d : funcDefn.formals) {
+			d.accept(this);
+		}
+		funcDefn.body.accept(this);
+		table.close();
+	}
+	@Override
+	public void visit(StmtBlock stmtBlock) {
+		table.open(stmtBlock.associatedScope);
+		for (Statement s : stmtBlock.block) {
+			s.accept(this);
+		}
+		table.close();
+	}
+	
+	public void visit(AssignStmt assignStmt){
+		assignStmt.left.accept(this);
+		assignStmt.expr.accept(this);
+		if(!assignStmt.expr.type.compatible(assignStmt.left.type)){
+			issueError(new IncompatBinOpError(assignStmt.getLocation(),assignStmt.left.type.toString(),"=",assignStmt.expr.type.toString()));
+		}
+	}
+	
+	public void visit(ForStmt forStmt) {
+		if(forStmt.init!=null){
+			forStmt.init.accept(this);
+		}
+		forStmt.condition.accept(this);
+		if(!forStmt.condition.type.equal(BaseType.BOOL)){
+			issueError(new BadTestExpr(forStmt.condition.getLocation()));
+		}
+		if(forStmt.update!=null){
+			forStmt.update.accept(this);
+		}
+		if(forStmt.loopBody != null) {
+			loopCount++;
+			forStmt.loopBody.accept(this);
+			loopCount--;
+		}
+	}
+	
+	public void visit(BreakStmt breakStmt){
+		if(loopCount==0)
+			issueError(new BreakOutOfLoopError(breakStmt.getLocation()));
+	}
+	
+	public void visit(IfStmt ifStmt){
+		ifStmt.condition.accept(this);
+		if(!ifStmt.condition.type.equal(BaseType.BOOL)){
+			issueError(new BadTestExpr(ifStmt.condition.getLocation()));
+		}
+		if (ifStmt.trueBranch != null) {
+			ifStmt.trueBranch.accept(this);
+		}
+		if (ifStmt.falseBranch != null) {
+			ifStmt.falseBranch.accept(this);
+		}
+	}
+	
+	public void visit(WhileStmt whileStmt){
+		whileStmt.condition.accept(this);
+		if(!whileStmt.condition.type.equal(BaseType.BOOL)){
+			issueError(new BadTestExpr(whileStmt.condition.getLocation()));
+		}
+		if(whileStmt.loopBody!=null){
+			loopCount++;
+			whileStmt.loopBody.accept(this);
+			loopCount--;
+		}
+	}
+	
+	
+	
+	
+	public void visit(VarDeclStmt vdStmt){
+		vdStmt.decl.accept(this);
+	}
+
+	@Override
+	public void visit(ExprStmt exprStmt) {
+		exprStmt.expr.accept(this);
+	}
+	
+	public void visit(PrintStmt printStmt){
+		for(int i=0;i<printStmt.exprs.size();i++){
+			printStmt.exprs.get(i).accept(this);
+			if(
+					(!printStmt.exprs.get(i).type.equal(BaseType.BOOL))&&
+					(!printStmt.exprs.get(i).type.equal(BaseType.INT))&&
+					(!printStmt.exprs.get(i).type.equal(BaseType.STRING))
+					)
+				issueError(new BadPrintArgError(printStmt.exprs.get(i).getLocation(),(new Integer(i+1)).toString(),printStmt.exprs.get(i).type.toString()));
+		}
+	}
+	
+	public void visit(ReturnStmt returnStmt){
+		if(returnStmt.expr!=null){
+			returnStmt.expr.accept(this);
+		}
+		if(returnStmt.expr==null&&(!currentFunction.getReturnType().equal(BaseType.VOID))){
+			issueError(new BadReturnTypeError(returnStmt.getLocation(),currentFunction.getReturnType().toString(),BaseType.VOID.toString()));
+		}
+		if(returnStmt.expr!=null&&!returnStmt.expr.type.compatible(currentFunction.getReturnType())){
+			issueError(new BadReturnTypeError(returnStmt.expr.getLocation(),currentFunction.getReturnType().toString(),returnStmt.expr.type.toString()));
+		}
+	}
+	
+	// visiting types
+	@Override
+	public void visit(IntType intType) {
+		intType.type = BaseType.INT;
+	}
+	
+	public void visit(BoolType boolType) {
+		boolType.type = BaseType.BOOL;
+	}
+	
+	public void visit(DoubleType doubleType) {
+		doubleType.type = BaseType.DOUBLE;
+	}
+	
+	public void visit(StringType stringType) {
+		stringType.type = BaseType.STRING;
+	}
+	
+	public void visit(VoidType voidType) {
+		voidType.type = BaseType.VOID;
+	}
+	
+	public void visit(ArrayType arrayType) {
+		arrayType.elementType.accept(this);
+		if (arrayType.elementType.type.equal(BaseType.ERROR)) {
+			arrayType.type = BaseType.ERROR;
+		} else if (arrayType.elementType.type.equal(BaseType.VOID)) {
+			issueError(new BadArrElementError(arrayType.getLocation()));
+			arrayType.type = BaseType.ERROR;
+		} else {
+			arrayType.type = new decaf.type.ArrayType(
+					arrayType.elementType.type);
+		}
+	}
+	
+
+	private void issueError(DecafError error) {
+		Driver.getDriver().issueError(error);
+	}
+}

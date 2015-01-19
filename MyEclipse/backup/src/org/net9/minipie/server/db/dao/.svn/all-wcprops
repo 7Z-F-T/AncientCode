@@ -1,0 +1,263 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/190/server/trunk/src/org/net9/minipie/server/db/dao
+END
+TagDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/95/server/trunk/src/org/net9/minipie/server/db/dao/TagDAO.java
+END
+User_UserDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/189/server/trunk/src/org/net9/minipie/server/db/dao/User_UserDAO.java
+END
+Group_UserDAOHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/141/server/trunk/src/org/net9/minipie/server/db/dao/Group_UserDAOHibernate.java
+END
+ContactURLDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/22/server/trunk/src/org/net9/minipie/server/db/dao/ContactURLDAO.java
+END
+LimitedSearcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/176/server/trunk/src/org/net9/minipie/server/db/dao/LimitedSearcher.java
+END
+ContactIMDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/22/server/trunk/src/org/net9/minipie/server/db/dao/ContactIMDAO.java
+END
+UserURLDAOHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/94/server/trunk/src/org/net9/minipie/server/db/dao/UserURLDAOHibernate.java
+END
+ContactAddressDAOHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/94/server/trunk/src/org/net9/minipie/server/db/dao/ContactAddressDAOHibernate.java
+END
+ContactEmailDAOHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/103/server/trunk/src/org/net9/minipie/server/db/dao/ContactEmailDAOHibernate.java
+END
+ContactPhoneDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/22/server/trunk/src/org/net9/minipie/server/db/dao/ContactPhoneDAO.java
+END
+Tag_ContactDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/99/server/trunk/src/org/net9/minipie/server/db/dao/Tag_ContactDAO.java
+END
+UserIMDAOHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/94/server/trunk/src/org/net9/minipie/server/db/dao/UserIMDAOHibernate.java
+END
+Group_UserDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/141/server/trunk/src/org/net9/minipie/server/db/dao/Group_UserDAO.java
+END
+ContactDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/125/server/trunk/src/org/net9/minipie/server/db/dao/ContactDAO.java
+END
+Tag_UserDAOHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/134/server/trunk/src/org/net9/minipie/server/db/dao/Tag_UserDAOHibernate.java
+END
+TagDAOHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/95/server/trunk/src/org/net9/minipie/server/db/dao/TagDAOHibernate.java
+END
+GenericHibernateDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/139/server/trunk/src/org/net9/minipie/server/db/dao/GenericHibernateDAO.java
+END
+UserDAOHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/190/server/trunk/src/org/net9/minipie/server/db/dao/UserDAOHibernate.java
+END
+AllSearcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/176/server/trunk/src/org/net9/minipie/server/db/dao/AllSearcher.java
+END
+ContactIMDAOHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/125/server/trunk/src/org/net9/minipie/server/db/dao/ContactIMDAOHibernate.java
+END
+BaseSearcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/172/server/trunk/src/org/net9/minipie/server/db/dao/BaseSearcher.java
+END
+UserIMDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/23/server/trunk/src/org/net9/minipie/server/db/dao/UserIMDAO.java
+END
+UserAddressDAOHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/94/server/trunk/src/org/net9/minipie/server/db/dao/UserAddressDAOHibernate.java
+END
+ContactPhoneDAOHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/125/server/trunk/src/org/net9/minipie/server/db/dao/ContactPhoneDAOHibernate.java
+END
+NotificationDAOHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/119/server/trunk/src/org/net9/minipie/server/db/dao/NotificationDAOHibernate.java
+END
+UserEmailDAOHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/94/server/trunk/src/org/net9/minipie/server/db/dao/UserEmailDAOHibernate.java
+END
+GenericDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/23/server/trunk/src/org/net9/minipie/server/db/dao/GenericDAO.java
+END
+ContactDAOHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/171/server/trunk/src/org/net9/minipie/server/db/dao/ContactDAOHibernate.java
+END
+UserDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/190/server/trunk/src/org/net9/minipie/server/db/dao/UserDAO.java
+END
+GroupDAOHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/146/server/trunk/src/org/net9/minipie/server/db/dao/GroupDAOHibernate.java
+END
+UserAddressDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/23/server/trunk/src/org/net9/minipie/server/db/dao/UserAddressDAO.java
+END
+UserEmailDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/23/server/trunk/src/org/net9/minipie/server/db/dao/UserEmailDAO.java
+END
+NotificationDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/82/server/trunk/src/org/net9/minipie/server/db/dao/NotificationDAO.java
+END
+UserPhoneDAOHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/94/server/trunk/src/org/net9/minipie/server/db/dao/UserPhoneDAOHibernate.java
+END
+GroupDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/141/server/trunk/src/org/net9/minipie/server/db/dao/GroupDAO.java
+END
+User_UserDAOHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/189/server/trunk/src/org/net9/minipie/server/db/dao/User_UserDAOHibernate.java
+END
+ContactURLDAOHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/125/server/trunk/src/org/net9/minipie/server/db/dao/ContactURLDAOHibernate.java
+END
+ContactAddressDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/22/server/trunk/src/org/net9/minipie/server/db/dao/ContactAddressDAO.java
+END
+UserURLDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/23/server/trunk/src/org/net9/minipie/server/db/dao/UserURLDAO.java
+END
+ContactEmailDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/22/server/trunk/src/org/net9/minipie/server/db/dao/ContactEmailDAO.java
+END
+Tag_ContactDAOHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/107/server/trunk/src/org/net9/minipie/server/db/dao/Tag_ContactDAOHibernate.java
+END
+UserPhoneDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/23/server/trunk/src/org/net9/minipie/server/db/dao/UserPhoneDAO.java
+END
+Tag_UserDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/99/server/trunk/src/org/net9/minipie/server/db/dao/Tag_UserDAO.java
+END

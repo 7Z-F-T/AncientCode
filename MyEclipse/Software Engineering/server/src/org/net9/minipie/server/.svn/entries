@@ -1,0 +1,49 @@
+10
+
+dir
+196
+https://mini-pie.googlecode.com/svn/server/trunk/src/org/net9/minipie/server
+https://mini-pie.googlecode.com/svn
+
+
+
+2009-06-20T14:16:27.900560Z
+196
+philipleethree
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ff72b304-07c1-11de-b8f3-b9fb9eb71b04
+
+auth
+dir
+
+db
+dir
+
+api
+dir
+
+data
+dir
+
+logic
+dir
+
+web
+dir
+
+exception
+dir
+

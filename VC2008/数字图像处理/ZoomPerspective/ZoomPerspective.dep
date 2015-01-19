@@ -1,0 +1,46 @@
+# Microsoft Developer Studio Generated Dependency File, included by ZoomPerspective.mak
+
+.\ChildFrm.cpp : \
+	".\ChildFrm.h"\
+	".\StdAfx.h"\
+	".\ZoomPerspective.h"\
+	
+
+.\MainFrm.cpp : \
+	".\MainFrm.h"\
+	".\StdAfx.h"\
+	".\ZoomPerspective.h"\
+	
+
+.\StdAfx.cpp : \
+	".\StdAfx.h"\
+	
+
+.\View.cpp : \
+	".\StdAfx.h"\
+	".\View.h"\
+	".\ZoomPerspective.h"\
+	".\ZoomPerspectiveDoc.h"\
+	
+
+.\ZoomPerspective.cpp : \
+	".\ChildFrm.h"\
+	".\MainFrm.h"\
+	".\StdAfx.h"\
+	".\View.h"\
+	".\ZoomPerspective.h"\
+	".\ZoomPerspectiveDoc.h"\
+	
+
+.\ZoomPerspective.rc : \
+	".\res\Toolbar.bmp"\
+	".\res\ZoomPerspective.ico"\
+	".\res\ZoomPerspective.rc2"\
+	".\res\ZoomPerspectiveDoc.ico"\
+	
+
+.\ZoomPerspectiveDoc.cpp : \
+	".\StdAfx.h"\
+	".\ZoomPerspective.h"\
+	".\ZoomPerspectiveDoc.h"\
+	

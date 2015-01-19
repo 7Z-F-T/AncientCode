@@ -1,0 +1,22 @@
+import java.io.*;
+public class FileStore {
+	public static void main (String[] args) throws IOException{
+		InputStreamReader isr;
+		BufferedReader br;
+		OutputStreamWriter osw;
+		BufferedWriter bw;
+		
+		isr=new InputStreamReader(System.in);
+		br=new BufferedReader(isr);
+		String s=br.readLine();
+		
+		osw=new OutputStreamWriter(System.out);
+		bw=new BufferedWriter(osw);
+		bw.write(s);
+		
+		
+		
+
+	}
+
+}

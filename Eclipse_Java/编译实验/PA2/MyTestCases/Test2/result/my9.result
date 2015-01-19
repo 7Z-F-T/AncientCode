@@ -1,0 +1,13 @@
+*** Error at (12,9): incompatible operands: int = double
+*** Error at (12,30): incompatible operands: int + double
+*** Error at (13,6): incompatible operands: int = double
+*** Error at (15,11): test expression must have bool type
+*** Error at (26,6): incompatible operands: int = double
+*** Error at (28,11): incompatible operands: int == double
+*** Error at (29,11): incompatible operands: int + double
+*** Error at (29,11): test expression must have bool type
+*** Error at (30,11): test expression must have bool type
+*** Error at (48,8): incompatible operands: int == double
+*** Error at (49,6): incompatible operands: int = double
+*** Error at (52,6): incompatible operands: int = double
+*** Error at (54,8): test expression must have bool type

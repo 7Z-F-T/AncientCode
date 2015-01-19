@@ -1,0 +1,13 @@
+import java.io.*;
+public class FileStore {
+	public static void main throws IOException(String[] args) {
+		InputStreamReader isr;
+		BufferedReader br;
+		isr=new InputStreamReader(System.in);
+		br=new BufferedReader(isr);
+		String s=br.readLine();
+		System.out.println(s);
+
+	}
+
+}

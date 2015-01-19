@@ -1,0 +1,27 @@
+GLOBAL SCOPE:
+    (2,1) -> class Stack
+    CLASS SCOPE OF 'Stack':
+        (3,9) -> variable sp : int
+        (4,11) -> variable elems : int[]
+        (6,10) -> function Init : class : Stack->void
+        (12,10) -> function Push : class : Stack->int->void
+        (17,9) -> function Pop : class : Stack->int
+        (24,9) -> function NumElems : class : Stack->int
+        (28,17) -> static function main : void
+        FORMAL SCOPE OF 'Init':
+            (6,10) -> variable @this : class : Stack
+            LOCAL SCOPE:
+        FORMAL SCOPE OF 'Push':
+            (12,10) -> variable @this : class : Stack
+            (12,19) -> variable @i : int
+            LOCAL SCOPE:
+        FORMAL SCOPE OF 'Pop':
+            (17,9) -> variable @this : class : Stack
+            LOCAL SCOPE:
+                (18,13) -> variable val : int
+        FORMAL SCOPE OF 'NumElems':
+            (24,9) -> variable @this : class : Stack
+            LOCAL SCOPE:
+        FORMAL SCOPE OF 'main':
+            LOCAL SCOPE:
+                (29,21) -> variable s : class : Stack

@@ -1,0 +1,22 @@
+class Main{
+	int m;
+	int m2;
+	int m3;
+	int m4;
+	static void main(){
+		class ABC abc;
+		abc=new ABC();
+		abc.fABC(1,2,3);
+		abc.sABC(1,2,3);
+	
+	}
+}
+
+class ABC{
+	void fABC(int x,int y,int z){
+		sABC(777,888,999);
+	}
+	static void sABC(int x,int y,int z){
+		Print(x,y,z);
+	}
+}

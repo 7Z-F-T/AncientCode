@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launchConfiguration type="com.genuitec.eclipse.wdt.jsp.debug.localServer">
+<stringAttribute key="LAUNCH_IS_TEMPORARY" value="false"/>
+<stringAttribute key="SERVER_TYPE_ID" value="myeclipseTomcatServer"/>
+<stringAttribute key="SERVER_TYPE_NAME" value="MyEclipse Tomcat "/>
+<booleanAttribute key="org.eclipse.debug.core.appendEnvironmentVariables" value="true"/>
+<listAttribute key="org.eclipse.jdt.launching.CLASSPATH">
+<listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;runtimeClasspathEntry containerPath=&quot;org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/MyEclipse&quot; path=&quot;1&quot; type=&quot;4&quot;/&gt;&#13;&#10;"/>
+<listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;runtimeClasspathEntry path=&quot;3&quot; projectName=&quot;server&quot; type=&quot;1&quot;/&gt;&#13;&#10;"/>
+<listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;runtimeClasspathEntry externalArchive=&quot;D:/Program Files/MyEclipse/myeclipse/eclipse/plugins/com.genuitec.eclipse.easie.tomcat.myeclipse_6.5.0.zmyeclipse650200806/tomcat/bin/bootstrap.jar&quot; path=&quot;3&quot; type=&quot;2&quot;/&gt;&#13;&#10;"/>
+<listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;runtimeClasspathEntry externalArchive=&quot;E:/编程/MyEclipse/Software Engineering/.metadata/.plugins/com.genuitec.eclipse.easie.tomcat.myeclipse/tomcat/lib/MiniPieAuth.jar&quot; path=&quot;3&quot; type=&quot;2&quot;/&gt;&#13;&#10;"/>
+</listAttribute>
+<booleanAttribute key="org.eclipse.jdt.launching.DEFAULT_CLASSPATH" value="false"/>
+<stringAttribute key="org.eclipse.jdt.launching.JRE_CONTAINER" value="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/MyEclipse"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.apache.catalina.startup.Bootstrap"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="start"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dcatalina.home=&quot;D:/Program Files/MyEclipse/myeclipse/eclipse/plugins/com.genuitec.eclipse.easie.tomcat.myeclipse_6.5.0.zmyeclipse650200806/tomcat&quot; -Dcatalina.base=&quot;E:/编程/MyEclipse/Software Engineering/.metadata/.plugins/com.genuitec.eclipse.easie.tomcat.myeclipse/tomcat&quot; -Djava.endorsed.dirs=&quot;D:/Program Files/MyEclipse/myeclipse/eclipse/plugins/com.genuitec.eclipse.easie.tomcat.myeclipse_6.5.0.zmyeclipse650200806/tomcat/common/endorsed&quot; -Djava.io.tmpdir=&quot;E:/编程/MyEclipse/Software Engineering/.metadata/.plugins/com.genuitec.eclipse.easie.tomcat.myeclipse/tomcat/temp&quot; -Djava.library.path=&quot;D:/Program Files/MyEclipse/bin;D:/Program Files/MyEclipse/myeclipse/eclipse/plugins/com.genuitec.eclipse.easie.tomcat.myeclipse_6.5.0.zmyeclipse650200806/tomcat/bin&quot; -Dsun.io.useCanonCaches=false -Djava.security.auth.login.config==E:/jaas.config"/>
+<stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="D:/Program Files/MyEclipse/myeclipse/eclipse/plugins/com.genuitec.eclipse.easie.tomcat.myeclipse_6.5.0.zmyeclipse650200806/tomcat/bin"/>
+</launchConfiguration>

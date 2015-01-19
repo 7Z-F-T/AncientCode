@@ -1,0 +1,62 @@
+function [freq1,freq2]=DTFM(file_name)
+
+[f,sample_rate,bit]=wavread(file_name);
+% plot(f);
+
+%separate the wave into many chunks, each of them expresses one
+%dial-number,then we analyze them separately.
+k=1;
+i=1;
+while i<length(f)
+    if(f(i)>0.6)
+        for j=1:300
+            sf(k,j)=f(i);%sf means "separated f"
+            i=i+1;
+        end
+        k=k+1;
+    end
+    i=i+1;
+end
+numbers=size(sf,1);
+% numbers=sf(1,:);
+
+%now start to calculate the frequency
+% plot(sf(1,:));
+F=abs(fft(sf(1,:)));
+
+peak_number=1;
+for n=2:(length(F)/2)
+    if(F(n)>F(n-1) && F(n)>F(n+1))
+        peak_pos(peak_number)=n;
+        peak_number=peak_number+1;
+    end
+end
+
+maximum=0;
+for n=1:length(peak_pos)
+    if(F(peak_pos(n))>maximum)
+        max_peak_pos=peak_pos(n);
+        maximum=F(peak_pos(n));
+    end
+end
+maximum=0;
+for n=1:length(peak_pos)
+    if(F(peak_pos(n))>maximum && peak_pos(n)~=max_peak_pos)
+        second_max_peak_pos=peak_pos(n);
+        maximum=F(peak_pos(n));
+    end
+end
+
+if(max_peak_pos>second_max_peak_pos)
+    temp=max_peak_pos;
+    max_peak_pos=second_max_peak_pos;
+    second_max_peak_pos=temp;
+end
+n1=max_peak_pos;
+n2=second_max_peak_pos;
+omega1=2*n1*pi/length(F);%digital omega
+omega2=2*n2*pi/length(F);%digital omega
+freq1=omega1*sample_rate/2/pi;%analog freq
+freq2=omega2*sample_rate/2/pi;%analog freq
+
+end

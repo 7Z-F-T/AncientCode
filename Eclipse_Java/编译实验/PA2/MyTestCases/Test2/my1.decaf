@@ -1,0 +1,82 @@
+class Main{
+	static void main(){
+		return 1;
+	}
+	int foo(){
+		return;
+	}
+	int foo2(){
+		return 2.0;
+	}
+	void foo3(){
+		int a;
+		a = 1 + 1;
+		a = 1 + 1.0;
+		a = 1.0 + 1;
+		a = 1 + "1";
+		a = 1 + true;
+		a = 1 + null;
+		
+		a = 1 - 1.0;
+		a = 1 * 1.0;
+		a = 1 / 1.0;
+		
+		a = 1 % 1.0;
+		a = 1.0 % 1.0;
+	}
+	void foo4(){
+		int a;
+		double b;
+		bool c;
+		string d;
+		class Main e;
+		
+		a = 1.0;
+		b = 1;
+		c = 1;
+		d = null;
+		d = 1;
+		e = 1;
+		e = null;
+	}
+	void foo5(){
+		bool a;
+		a = 1 < 2;
+		a = 1.0 < 2;
+		a = 1.0 < 2.0;
+		a = 1 < 2.0;
+		a = 1 < true;
+		a = 1 < "2";
+		a = 1 < null;
+		
+		a = 1 <= 2.0;
+		a = 1 > 2.0;
+		a = 1 >= 2.0;
+	}
+	void foo6(){
+		bool a;
+		a = true && false;
+		a = 1 && false;
+		a = false && 1;
+		a = 2.0 && false;
+		a = "true" && false;
+		a = null && false;
+		
+		a = 1 || false;
+	}
+	void foo7(){
+		bool a;
+		a = !true;
+		a = !1;
+		a = !2.0;
+		a = !"true";
+		a = !null;
+	}
+}
+
+class A{
+
+}
+class B extends A{
+
+}

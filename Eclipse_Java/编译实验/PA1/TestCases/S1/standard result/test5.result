@@ -1,0 +1,9 @@
+program
+    class Main <empty>
+        static func main voidtype
+            formals
+            stmtblock
+                vardecl s stringtype
+                assign
+                    varref s
+                    stringconst "\n\t\\\""

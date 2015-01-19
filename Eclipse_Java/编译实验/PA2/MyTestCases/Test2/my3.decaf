@@ -1,0 +1,54 @@
+class Main{
+	static void main(){
+		
+	}
+	void foo4(){
+		while(true){
+			break;
+		}
+		for(;true;){
+			break;
+		}
+		while(true){
+			for(;true;){
+				break;
+			}
+		}
+		for(;true;){
+			while(true){
+				break;
+			}
+		}
+		while(true){
+			for(;true;){
+				while(true){
+					break;
+				}
+			}
+		}
+		while(true){
+			while(true){
+				
+			}
+			break;
+		}
+		for(;false;){
+			for(;true;){
+				
+			}
+			break;
+		}
+		
+		break;
+		while(true);
+			break;
+		for(;false;);
+			break;
+		while(true){
+			for(;false;){
+				
+			}
+		}
+		break;
+	}
+}

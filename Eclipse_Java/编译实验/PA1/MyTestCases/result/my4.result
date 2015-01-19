@@ -1,0 +1,8 @@
+program
+    class Main <empty>
+        func foo voidtype
+            formals
+            stmtblock
+                stmtblock
+                    stmtblock
+                stmtblock

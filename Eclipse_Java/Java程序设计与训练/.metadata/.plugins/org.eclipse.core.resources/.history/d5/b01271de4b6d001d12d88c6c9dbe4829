@@ -1,0 +1,31 @@
+
+public class Exception {
+	public static void main(String[] args) {
+		try{
+			throwException(1);
+			throwException(2);
+			throwException(3);
+			throwException(4);
+		}catch(ArithmeticException e){
+			System.out.println(e);
+		}catch(NullPointerException e){
+			System.out.println(e);
+		}catch(ClassCastException e){
+			System.out.println(e);
+		}catch(ArrayIndexOutOfBoundsException e){
+			System.out.println(e);
+		}
+
+	}
+
+}
+class throwTest{
+	public static void throwException(int i){
+		switch(i){
+		case:1 throw new ArithmeticException();break;
+		case:2 throw new NullPointerException();break;
+		case:3 throw new ClassCastException();break;
+		case:4 throw new ArrayIndexOutOfBoundsException();break;
+		}
+	}
+}

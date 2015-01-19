@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/152/server/trunk/src/org/net9/minipie/server/logic/operation/group/admin
+END
+DispandGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/152/server/trunk/src/org/net9/minipie/server/logic/operation/group/admin/DispandGroup.java
+END
+AppointAdmin.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/152/server/trunk/src/org/net9/minipie/server/logic/operation/group/admin/AppointAdmin.java
+END
+ApproveMembership.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/152/server/trunk/src/org/net9/minipie/server/logic/operation/group/admin/ApproveMembership.java
+END
+InviteUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/152/server/trunk/src/org/net9/minipie/server/logic/operation/group/admin/InviteUser.java
+END
+EditGroupInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/152/server/trunk/src/org/net9/minipie/server/logic/operation/group/admin/EditGroupInfo.java
+END

@@ -1,0 +1,31 @@
+GAL20V8
+SCC
+zzzz
+  1    2    3    4    5    6    7    8    9   10    11    12
+  CK   S3   S2   S1   S0   C    Z    INT# S   RST#  NC  GND
+  C_M# I0   CK3  I1   I2   I3   CCM  NRST CC# NC    I4    VCC
+  
+  /CC# =  /S3*/S2*/S1*/S0
+        + /S3*S2*S1*/S0*/I2
+        + /S3*S2*/S1*/S0*/I1*/I0*/C
+        + /S3*S2*/S1*/S0*/I1*I0*C
+        + /S3*S2*/S1*/S0*I1*/I0*/Z
+        + /S3*S2*/S1*/S0*I1*I0*Z
+        + CCM
+  CCM  =  /S3*S2*S1*S0*I0
+        + /S3*S2*/S1*S0*/I1*/I0*/S
+        + /S3*S2*/S1*S0*/I1*I0*S
+        + /S3*/S2*S1*/S0*/INT#
+  NRST = /RST#*/C_M# + CK
+  CK3=CK
+
+  CCM.OE=VCC
+  CC#.OE=VCC
+  NRST.OE=VCC
+  CK3.OE=VCC
+DESCRIPTION
+USE GAL TO CONTROL
+  NRST = /RST*/C_M#
+  NRST = /RST*/(C_M#*/CK)
+  NRST = /(RST*/CK)
+  NRST = /RST

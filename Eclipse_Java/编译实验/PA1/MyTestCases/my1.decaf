@@ -1,0 +1,13 @@
+class Main{
+	int a;
+	double b;
+	bool c;
+	string d;
+}
+
+class A extends Main{
+	int a;
+	double b;
+	bool c;
+	string d;
+}

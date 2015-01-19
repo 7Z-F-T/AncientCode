@@ -1,0 +1,584 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Dip.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.chs\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Dip.ico"
+IDR_DIPTYPE             ICON                    "res\\DipDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",              ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "最近文件",                        ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                      ID_APP_EXIT
+    END
+    POPUP "查看(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                     ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 Dip(&A)...",               ID_APP_ABOUT
+    END
+END
+
+IDR_DIPTYPE MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "打开(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "关闭(&C)",                      ID_FILE_CLOSE
+        MENUITEM "保存(&S)\tCtrl+S",              ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",                  ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "最近文件",                        ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                      ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "撤消(&U)\tCtrl+Z",              ID_EDIT_UNDO
+    END
+    POPUP "图象处理(&I)"
+    BEGIN
+        MENUITEM "直方图(&H)",                     ID_HISTOGRAM
+        MENUITEM SEPARATOR
+        POPUP "点运算(&P)"
+        BEGIN
+            MENUITEM "域值化(&T)",                     ID_POINT_THRESHOLD
+            MENUITEM "反相(&N)",                      ID_POINT_NEGATIVE
+            MENUITEM "线性调整(&L)",                    ID_POINT_LINEAR
+            MENUITEM "直方图均衡化(&E)",                  ID_POINT_EQUALIZATION
+        END
+        POPUP "代数运算(&A)"
+        BEGIN
+            MENUITEM "平移相减(&O)",                    ID_ALG_OFFSET
+            MENUITEM "与...相减(&S)",                  ID_ALG_SUBSTRACT
+            MENUITEM "与...相加(&A)",                  ID_ALG_ADD
+        END
+        POPUP "几何运算(&G)"
+        BEGIN
+            MENUITEM "水平翻转(&H)",                    ID_GEO_HORIZON
+            MENUITEM "垂直翻转(&V)",                    ID_GEO_VERTICAL
+            MENUITEM "仿射变换(&A)",                    ID_GEO_AFFINE
+            MENUITEM "透视变换(&P)",                    ID_GEO_PERS
+        END
+        POPUP "领域运算(&L)"
+        BEGIN
+            MENUITEM "领域平均(&A)",                    ID_FIELD_AVERAGE
+            MENUITEM "高斯滤波(&G)",                    ID_FIELD_GAUSSIAN
+            MENUITEM SEPARATOR
+            MENUITEM "Roberts算子(&R)",               ID_FIELD_ROBERTS
+            MENUITEM "Prewitt算子(&P)",               ID_FIELD_PREWITT
+            MENUITEM "Sobel算子(&S)",                 ID_FIELD_SOBEL
+            MENUITEM "I.Sobel算子(&I)",               ID_FIELD_ISOBEL
+            MENUITEM "Laplacian算子(&L)",             ID_FIELD_LAPLACIAN
+            MENUITEM SEPARATOR
+            MENUITEM "Canny检测(&C)",                 ID_FIELD_CANNY
+        END
+        POPUP "形态学运算(&M)"
+        BEGIN
+            MENUITEM "膨胀(&D)",                      ID_MOR_DILATION
+            MENUITEM "腐蚀(&E)",                      ID_MOR_EROTION
+            MENUITEM "开运算(&O)",                     ID_MOR_OPEN
+            MENUITEM "闭运算(&C)",                     ID_MOR_CLOSE
+            MENUITEM SEPARATOR
+            MENUITEM "边界(&E)",                      ID_MOR_EDGE
+            MENUITEM "骨架(&S)",                      ID_MOR_SKELECTON
+            MENUITEM "细化(&T)",                      IDC_MOR_THIN
+        END
+    END
+    POPUP "窗口(&W)"
+    BEGIN
+        MENUITEM "新建窗口(&N)",                    ID_WINDOW_NEW
+        MENUITEM "层叠(&C)",                      ID_WINDOW_CASCADE
+        MENUITEM "平铺(&T)",                      ID_WINDOW_TILE_HORZ
+        MENUITEM "排列图标(&A)",                    ID_WINDOW_ARRANGE
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 Dip(&A)...",               ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 237, 62
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 Dip"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    LTEXT           "Dip 数字图像处理课程大作业",IDC_STATIC,40,10,105,8,SS_NOPREFIX
+    LTEXT           "清华大学 计64 侯杰 2005010130",IDC_STATIC,39,24,119,8
+    DEFPUSHBUTTON   "确定",IDOK,180,7,50,14,WS_GROUP
+    LTEXT           "(C)版权所有 2009.5",IDC_STATIC,39,38,119,8,SS_CENTERIMAGE
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,14,21,21
+END
+
+IDD_POINT_THRESHOLD DIALOGEX 0, 0, 149, 77
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "请输入域值"
+FONT 11, "宋体", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,42,49,32,14
+    PUSHBUTTON      "取消",IDCANCEL,77,49,32,14
+    LTEXT           "域值：",IDC_STATIC,14,31,25,8
+    EDITTEXT        IDC_THRESHOLD,114,29,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "预览",IDC_PREVIEW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,9,32,10
+    CONTROL         "Slider1",IDC_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,38,28,75,14
+END
+
+IDD_POINT_LINEAR DIALOGEX 0, 0, 167, 94
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "请输入线性参数"
+FONT 10, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,28,62,38,14
+    PUSHBUTTON      "取消",IDCANCEL,70,62,38,14
+    LTEXT           "亮度",IDC_STATIC,14,19,17,8
+    EDITTEXT        IDC_BRIGHTNESS,131,15,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "预览",IDC_PREVIEW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,126,64,32,10
+    LTEXT           "对比度",IDC_STATIC,10,41,25,8
+    EDITTEXT        IDC_CONTRAST,131,39,25,12,ES_AUTOHSCROLL
+    CONTROL         "Slider1",IDC_SLIDER2,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,35,38,97,15,WS_EX_TRANSPARENT
+    CONTROL         "Slider1",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,35,16,96,15,WS_EX_TRANSPARENT
+END
+
+IDD_HISTOGRAM DIALOGEX 0, 0, 196, 107
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "直方图"
+FONT 8, "System", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_HISTVIEW,"Static",SS_BLACKFRAME | SS_NOTIFY,85,17,99,55
+    GROUPBOX        "统计数据",IDC_STATIC,15,24,58,44
+    LTEXT           "灰度值",IDC_STATIC,19,38,25,8
+    LTEXT           "象素数",IDC_STATIC,19,54,25,8
+    LTEXT           "255",IDC_GREYLEVEL,52,38,13,8
+    LTEXT           "10000",IDC_GREYCOUNT,49,54,21,8
+    CONTROL         "",IDC_COLORLIST,"Static",SS_BLACKFRAME,85,78,99,8
+END
+
+IDD_GEO_AFFINE DIALOGEX 0, 0, 201, 137
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "请输入仿射参数"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,16,116,38,14
+    PUSHBUTTON      "取消",IDCANCEL,62,116,38,14
+    EDITTEXT        IDC_SCALE,159,16,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Slider1",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,37,15,119,15
+    EDITTEXT        IDC_TRANSFORM,159,41,25,12,ES_AUTOHSCROLL
+    CONTROL         "Slider1",IDC_SLIDER2,"msctls_trackbar32",TBS_AUTOTICKS | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,37,39,119,15
+    EDITTEXT        IDC_DISTORT,159,65,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Slider1",IDC_SLIDER3,"msctls_trackbar32",TBS_AUTOTICKS | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,37,63,119,15
+    EDITTEXT        IDC_ROTATE,159,89,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Slider1",IDC_SLIDER4,"msctls_trackbar32",TBS_AUTOTICKS | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,37,87,119,15
+    CONTROL         "预览",IDC_PREVIEW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,160,117,32,10
+    LTEXT           "尺度",IDC_STATIC,16,19,17,8
+    LTEXT           "伸缩",IDC_STATIC,16,43,17,8
+    LTEXT           "扭曲",IDC_STATIC,16,67,17,8
+    LTEXT           "旋转",IDC_STATIC,16,91,17,8
+    PUSHBUTTON      "复位",IDC_RESET,108,116,38,14
+END
+
+IDD_GEO_PERS DIALOGEX 0, 0, 201, 137
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "请输入透视参数"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,15,116,38,14
+    PUSHBUTTON      "取消",IDCANCEL,60,116,38,14
+    EDITTEXT        IDC_DISTANCE,159,17,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Slider1",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,37,15,119,15
+    EDITTEXT        IDC_THITA,159,40,25,12,ES_AUTOHSCROLL
+    CONTROL         "Slider1",IDC_SLIDER2,"msctls_trackbar32",TBS_AUTOTICKS | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,37,39,119,15
+    EDITTEXT        IDC_PHAI,159,65,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Slider1",IDC_SLIDER3,"msctls_trackbar32",TBS_AUTOTICKS | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,37,63,119,15
+    EDITTEXT        IDC_FOCUS,159,89,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Slider1",IDC_SLIDER4,"msctls_trackbar32",TBS_AUTOTICKS | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,37,87,119,15
+    CONTROL         "预览",IDC_PREVIEW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,160,117,32,10
+    LTEXT           "距离",IDC_STATIC,16,19,17,8
+    LTEXT           "视角1",IDC_STATIC,16,43,21,8
+    LTEXT           "视角2",IDC_STATIC,16,67,21,8
+    LTEXT           "焦距",IDC_STATIC,16,91,17,8
+    PUSHBUTTON      "复位",IDC_RESET,105,116,38,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "CompanyName", "清华大学"
+            VALUE "FileDescription", "Dip Microsoft 基础类应用程序"
+            VALUE "FileVersion", "1 . 0"
+            VALUE "InternalName", "Dip"
+            VALUE "LegalCopyright", "侯杰 版权所有 (C) 2009.5"
+            VALUE "OriginalFilename", "Dip.EXE"
+            VALUE "ProductName", "Dip 应用程序"
+            VALUE "ProductVersion", "1 . 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 230
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_POINT_THRESHOLD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 139
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 70
+    END
+
+    IDD_POINT_LINEAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 160
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_HISTOGRAM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+
+    IDD_GEO_AFFINE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 194
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_GEO_PERS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 194
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 130
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Dip"
+    IDR_DIPTYPE             "\nDip\nDip\n\n\nDip.Document\nDip Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Dip"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_OPEN            "打开一个现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+    ID_FILE_PAGE_SETUP      "改变打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "改变打印机及打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "为活动文档打开另一个窗口\n新建窗口"
+    ID_WINDOW_ARRANGE       "将图标排列在窗口底部\n排列图标"
+    ID_WINDOW_CASCADE       "排列窗口成相互重叠\n层叠窗口"
+    ID_WINDOW_TILE_HORZ     "排列窗口成互不重叠\n平铺窗口"
+    ID_WINDOW_TILE_VERT     "排列窗口成互不重叠\n平铺窗口"
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+    AFX_IDS_MDICHILD        "激活该窗口"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预阅"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Dip.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#include "l.chs\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

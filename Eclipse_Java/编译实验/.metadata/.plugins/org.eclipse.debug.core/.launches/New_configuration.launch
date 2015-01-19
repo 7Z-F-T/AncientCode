@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/PA4/src/decaf/Driver.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="decaf.Driver"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-l 3 math.decaf"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="PA4"/>
+<stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="E:\编程\Eclipse_Java\编译实验\PA4\result"/>
+</launchConfiguration>

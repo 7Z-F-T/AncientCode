@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/15/server/trunk/lib/Hibernate%203.3%20Core
+END
+hibernate3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/10/server/trunk/lib/Hibernate%203.3%20Core/hibernate3.jar
+END
+commons-collections-3.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/10/server/trunk/lib/Hibernate%203.3%20Core/commons-collections-3.1.jar
+END
+antlr-2.7.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/10/server/trunk/lib/Hibernate%203.3%20Core/antlr-2.7.6.jar
+END
+jta-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/10/server/trunk/lib/Hibernate%203.3%20Core/jta-1.1.jar
+END
+dom4j-1.6.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/10/server/trunk/lib/Hibernate%203.3%20Core/dom4j-1.6.1.jar
+END
+javassist-3.4.GA.jar
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/10/server/trunk/lib/Hibernate%203.3%20Core/javassist-3.4.GA.jar
+END
+log4j.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/14/server/trunk/lib/Hibernate%203.3%20Core/log4j.jar
+END
+hibernate-cglib-repack-2.1_3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/10/server/trunk/lib/Hibernate%203.3%20Core/hibernate-cglib-repack-2.1_3.jar
+END

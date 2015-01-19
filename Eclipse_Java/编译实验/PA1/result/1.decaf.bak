@@ -1,0 +1,34 @@
+class Main extends C{
+    int d;
+    void main() {
+           class A A;
+       class B B;
+           class C C;
+           int a;
+       a = A.A;
+           a = B.A;
+           a = B.getB();
+           a = C.C.C.C.C.C.C.B + new Main().d + new B().A + new A().A;
+           C.C.C = C.C.C.C;
+    }
+}
+class A{
+    int A;
+}
+class B extends A{
+    int B;
+        int getB(){
+        	c="XXX
+  XX";
+          return B;
+        }
+}
+class C extends B{
+    class C C;
+}
+class D extends Main{
+    class D D;
+        void Main(){
+          D.C.B = D.D.A;
+        }
+}

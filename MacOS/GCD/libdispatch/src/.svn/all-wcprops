@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/repository/libdispatch/!svn/ver/136/trunk/src
+END
+time.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repository/libdispatch/!svn/ver/136/trunk/src/time.c
+END
+source_private.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repository/libdispatch/!svn/ver/100/trunk/src/source_private.h
+END
+source.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repository/libdispatch/!svn/ver/129/trunk/src/source.c
+END
+queue_kevent.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repository/libdispatch/!svn/ver/90/trunk/src/queue_kevent.c
+END
+protocol.defs
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repository/libdispatch/!svn/ver/2/trunk/src/protocol.defs
+END
+source_internal.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repository/libdispatch/!svn/ver/98/trunk/src/source_internal.h
+END
+legacy.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repository/libdispatch/!svn/ver/98/trunk/src/legacy.c
+END
+object.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repository/libdispatch/!svn/ver/2/trunk/src/object.c
+END
+object_internal.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repository/libdispatch/!svn/ver/2/trunk/src/object_internal.h
+END
+legacy.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repository/libdispatch/!svn/ver/100/trunk/src/legacy.h
+END
+private.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repository/libdispatch/!svn/ver/100/trunk/src/private.h
+END
+internal.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repository/libdispatch/!svn/ver/131/trunk/src/internal.h
+END
+semaphore.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repository/libdispatch/!svn/ver/135/trunk/src/semaphore.c
+END
+queue_private.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repository/libdispatch/!svn/ver/2/trunk/src/queue_private.h
+END
+once.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/repository/libdispatch/!svn/ver/2/trunk/src/once.c
+END
+queue.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repository/libdispatch/!svn/ver/100/trunk/src/queue.c
+END
+semaphore_internal.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repository/libdispatch/!svn/ver/82/trunk/src/semaphore_internal.h
+END
+queue_internal.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repository/libdispatch/!svn/ver/75/trunk/src/queue_internal.h
+END
+apply.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/repository/libdispatch/!svn/ver/2/trunk/src/apply.c
+END
+hw_shims.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repository/libdispatch/!svn/ver/42/trunk/src/hw_shims.h
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repository/libdispatch/!svn/ver/79/trunk/src/Makefile.am
+END
+os_shims.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repository/libdispatch/!svn/ver/100/trunk/src/os_shims.h
+END
+benchmark.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repository/libdispatch/!svn/ver/100/trunk/src/benchmark.c
+END
+kevent_internal.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repository/libdispatch/!svn/ver/76/trunk/src/kevent_internal.h
+END

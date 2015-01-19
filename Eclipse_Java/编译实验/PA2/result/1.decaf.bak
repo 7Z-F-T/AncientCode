@@ -1,0 +1,6 @@
+class Main{
+	int b;
+	static void main(){
+		b.length;
+	}
+}

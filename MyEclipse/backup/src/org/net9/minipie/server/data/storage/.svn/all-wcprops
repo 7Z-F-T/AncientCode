@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/190/server/trunk/src/org/net9/minipie/server/data/storage
+END
+BasicUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/190/server/trunk/src/org/net9/minipie/server/data/storage/BasicUser.java
+END
+TagData.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/95/server/trunk/src/org/net9/minipie/server/data/storage/TagData.java
+END
+Query.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/182/server/trunk/src/org/net9/minipie/server/data/storage/Query.java
+END
+CommonListEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/66/server/trunk/src/org/net9/minipie/server/data/storage/CommonListEntry.java
+END
+UserRelation.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/86/server/trunk/src/org/net9/minipie/server/data/storage/UserRelation.java
+END
+BasicContact.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/91/server/trunk/src/org/net9/minipie/server/data/storage/BasicContact.java
+END
